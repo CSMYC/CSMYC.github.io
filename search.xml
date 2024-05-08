@@ -1,6 +1,205 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>博客写作的必会技能--markdown</title>
+    <url>/2024/04/18/Typora%E6%95%99%E7%A8%8B/</url>
+    <content><![CDATA[<h1 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h1><hr>
+<p>作为一个博客小白，我认为在正式开始创作的时候，系统的学习一下<code>markdown</code>软件之一的<code>Typora</code>是必要的。</p>
+<p>以下是我结合相关资料整理出的一部分教程。</p>
+<p>首先在开始之前，为了避免大脑突然宕机点了关闭按钮而忘记保存已经写好的文档，我强烈建议先打开自动保存功能！！！</p>
+<h1 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h1><hr>
+<blockquote>
+<p> 语法： #(一级标题) ##(二级标题) ###(三级标题)….</p>
+<p>代码：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="section">#  这是一个一级标题</span></span><br><span class="line"><span class="section">## 这是一个二级标题</span></span><br></pre></td></tr></table></figure>
+<p>快捷键：</p>
+<ul>
+<li>Ctrl+数字1~6 可以快速将选中的文本调成对应级别的标题</li>
+<li>Ctrl+0 可以快速将选中的文本调成普通文本</li>
+<li>Ctrl+加号/减号 可以对标题级别进行加减</li>
+</ul>
+</blockquote>
+<h1 id="段落"><a href="#段落" class="headerlink" title="段落"></a>段落</h1><hr>
+<h2 id="换行"><a href="#换行" class="headerlink" title="换行"></a>换行</h2><blockquote>
+<p>代码：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">这是一个段落</span><br><span class="line">这是一个段落</span><br></pre></td></tr></table></figure>
+<p>效果：</p>
+<p>这是第一行</p>
+<p>这是第二行</p>
+<p>这是一个段落<br>这是一个段落</p>
+<p>说明：</p>
+<p>回车换行的距离大一些，具体可参考效果中的演示</p>
+<p>想要段落的距离小一些，可以使用 shift+回车 组合键</p>
+</blockquote>
+<h2 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h2><blockquote>
+<p>语法： —-或者<em>*</em>  +回车</p>
+<p>代码：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">---或者***</span><br></pre></td></tr></table></figure>
+<p>效果</p>
+<hr>
+</blockquote>
+<h1 id="文字显示"><a href="#文字显示" class="headerlink" title="文字显示"></a>文字显示</h1><hr>
+<h2 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h2><blockquote>
+<p>语法：</p>
+<ul>
+<li>粗体：用一对双星号包裹</li>
+<li>删除线：用一堆双飘号包裹 </li>
+<li>下划线： 用一对u标签包裹</li>
+<li>斜体：用一对单星号包裹</li>
+<li>高亮：用一对双等号包裹</li>
+</ul>
+<p>代码：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="strong">**这是粗体**</span></span><br><span class="line">~~这是删除线~~</span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">u</span>&gt;</span></span>这是下划线<span class="language-xml"><span class="tag">&lt;/<span class="name">u</span>&gt;</span></span></span><br><span class="line"><span class="emphasis">*这是斜体*</span></span><br><span class="line">==这是高亮==</span><br></pre></td></tr></table></figure>
+<p>效果：</p>
+<p><strong>这是粗体</strong><br><del>这是删除线</del><br><u>这是下划线</u><br><em>这是斜体</em><br>==这是高亮==</p>
+<p>说明：</p>
+<p>高亮需要在偏好设置中开启，但是似乎在网页中并没有显示<br>如果需要输入“ * ”需要在其前面输入 / 来完成转义</p>
+<p>快捷键：</p>
+<ul>
+<li>加粗 ： Ctrl+B</li>
+<li>删除线：Shift+Alt+5</li>
+<li>下划线： Ctrl+U</li>
+<li>斜体： Ctrl+L</li>
+</ul>
+</blockquote>
+<h2 id="上下标"><a href="#上下标" class="headerlink" title="上下标"></a>上下标</h2><blockquote>
+<p>代码：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">x^3^</span><br><span class="line">H~2~O</span><br></pre></td></tr></table></figure>
+<p>效果：</p>
+<p>x^3^<br>H~2~O</p>
+</blockquote>
+<h1 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h1><hr>
+<h2 id="无序列表"><a href="#无序列表" class="headerlink" title="无序列表"></a>无序列表</h2><blockquote>
+<p>代码：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="emphasis">*/-/+ +空格</span></span><br></pre></td></tr></table></figure>
+<p>效果：</p>
+<p>1.只有同一级别：</p>
+<ul>
+<li>联想</li>
+<li>戴尔</li>
+<li>惠普</li>
+<li>华硕 </li>
+</ul>
+<p>2.子集类：</p>
+<ul>
+<li>华硕<ul>
+<li>天选</li>
+<li>ROG</li>
+</ul>
+</li>
+<li>戴尔<ul>
+<li>游侠</li>
+<li>外星人</li>
+</ul>
+</li>
+</ul>
+<p>快捷键 ： Ctrl+Shift+]</p>
+<p>说明：</p>
+<p>可以连续按两次回车退出当前层级列表<br>也可以按Tab键进行下一个层级的编辑</p>
+</blockquote>
+<h2 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h2><blockquote>
+<p>代码：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">数字+.+空格</span><br></pre></td></tr></table></figure>
+<p>效果：</p>
+<ol>
+<li><p>第一个标题</p>
+</li>
+<li><p>第二个标题</p>
+</li>
+<li><p>第三个标题</p>
+<p>子内容1</p>
+<p>子内容2</p>
+</li>
+<li><p>第四个标题</p>
+</li>
+</ol>
+<p>快捷键： Ctrl+Shift+[</p>
+</blockquote>
+<h2 id="任务列表"><a href="#任务列表" class="headerlink" title="任务列表"></a>任务列表</h2><blockquote>
+<p>代码：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="bullet">-</span> [] 玩游戏</span><br><span class="line"><span class="bullet">-</span> [] 上修罗</span><br></pre></td></tr></table></figure>
+<p>效果：</p>
+<ul>
+<li>[x] 玩游戏</li>
+<li>[ ] 上修罗 </li>
+</ul>
+</blockquote>
+<h1 id="区块显示"><a href="#区块显示" class="headerlink" title="区块显示"></a>区块显示</h1><blockquote>
+<p>代码：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&gt;&gt;+空格</span><br></pre></td></tr></table></figure>
+<p>效果：</p>
+<blockquote>
+<p>这是最外层区块</p>
+<blockquote>
+<p>这是内层区块</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<h1 id="代码显示"><a href="#代码显示" class="headerlink" title="代码显示"></a>代码显示</h1><h2 id="行内代码"><a href="#行内代码" class="headerlink" title="行内代码"></a>行内代码</h2><blockquote>
+<p>代码：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="code">`int a = 10`</span></span><br></pre></td></tr></table></figure>
+<p>效果：<br><code>int a = 10</code></p>
+<p>快捷键：Ctrl+Shift+`</p>
+</blockquote>
+<h2 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h2><blockquote>
+<p>效果：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">这是一个代码块</span><br></pre></td></tr></table></figure>
+<p>快捷键：Ctrl+Shift+K</p>
+</blockquote>
+<h1 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h1><blockquote>
+<p>代码：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">https://csmyc.github.io</span><br><span class="line">[<span class="string">我的博客</span>](<span class="link">https://csmyc.github.io</span>)</span><br></pre></td></tr></table></figure>
+<p>效果：<br><a href="https://csmyc.github.io">https://csmyc.github.io</a><br><a href="https://csmyc.github.io">我的博客</a></p>
+<p>快捷键：Ctrl+K</p>
+</blockquote>
+<h1 id="脚注"><a href="#脚注" class="headerlink" title="脚注"></a>脚注</h1><blockquote>
+<p>说明：对文本进行解释说明</p>
+<p>代码：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">[^文本]</span><br><span class="line">[^文本]：解释说明</span><br></pre></td></tr></table></figure>
+<p>效果：<br>idea<sup><a href="#fn_1" id="reffn_1">1</a></sup>是一个非常好用的IDE</p>
+<p><sup><a href="#fn_1" id="reffn_1">1</a></sup>:IDEA 全称 IntelliJ IDEA，是<a href="https://baike.baidu.com/item/java/85979?fromModule=lemma_inlink">java</a><a href="https://baike.baidu.com/item/编程语言/9845131?fromModule=lemma_inlink">编程语言</a>的<a href="https://baike.baidu.com/item/集成开发环境/298524?fromModule=lemma_inlink">集成开发环境</a>。</p>
+</blockquote>
+<h1 id="图片插入"><a href="#图片插入" class="headerlink" title="图片插入"></a>图片插入</h1><blockquote>
+<p>代码：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">![<span class="string">不显示的文字</span>](<span class="link">图片路径 &quot;图片标题&quot;</span>)</span><br></pre></td></tr></table></figure>
+<p>效果：</p>
+<p><img src="/images/top.png" alt="我的主页图片"></p>
+</blockquote>
+<h1 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h1><blockquote>
+<p>代码：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">| 1 | 2 | 3 |</span><br></pre></td></tr></table></figure>
+<p>效果：</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>快捷键 ： Ctrl+T</p>
+</blockquote>
+<h1 id="流程图"><a href="#流程图" class="headerlink" title="流程图"></a>流程图</h1><blockquote>
+<p>代码 ：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="code">```mermaid</span></span><br><span class="line"><span class="code">graph LR</span></span><br><span class="line"><span class="code">A[方形]==&gt;B(圆角)</span></span><br><span class="line"><span class="code">B==&gt;C&#123;条件a&#125;</span></span><br><span class="line"><span class="code">B--&gt;|a=1|D[结果1]</span></span><br><span class="line"><span class="code">C--&gt;|a=2|E[结果2]</span></span><br><span class="line"><span class="code">F[横向流程图]</span></span><br><span class="line"><span class="code">```</span></span><br></pre></td></tr></table></figure>
+<p>说明：</p>
+<p>hexo 默认不支持流程图，所以我就不在这里展示流程图的效果了，主要还是懒</p>
+</blockquote>
+<h3 id=""><a href="#" class="headerlink" title=" "></a> </h3>]]></content>
+      <tags>
+        <tag>markdown</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>小兔鲜</title>
     <url>/2024/05/08/%E5%B0%8F%E5%85%94%E9%B2%9C/</url>
     <content><![CDATA[<h1 id="项目起步"><a href="#项目起步" class="headerlink" title="项目起步"></a>项目起步</h1><h2 id="创建项目"><a href="#创建项目" class="headerlink" title="创建项目"></a>创建项目</h2><hr>
@@ -68,6 +267,361 @@
 ]]></content>
       <tags>
         <tag>前端</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>计算机组成原理</title>
+    <url>/2024/05/02/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/</url>
+    <content><![CDATA[<h1 id="第一章-计算机系统概述"><a href="#第一章-计算机系统概述" class="headerlink" title="第一章 计算机系统概述"></a>第一章 计算机系统概述</h1><hr>
+<h2 id="计算机系统简介"><a href="#计算机系统简介" class="headerlink" title="计算机系统简介"></a>计算机系统简介</h2><hr>
+<h3 id="计算机系统的概念和分类"><a href="#计算机系统的概念和分类" class="headerlink" title="计算机系统的概念和分类"></a>计算机系统的概念和分类</h3><p>计算机系统由<code>硬件</code>和<code>软件</code>两大部分组成。</p>
+<ul>
+<li><p>所谓<code>硬件</code>即指计算机的实体部分，它由看得见摸得着的各种电子元器件、各类光、点、机设备的实物组成，如主机、外设等。</p>
+</li>
+<li><p>所谓<code>软件</code>他是看不见摸不着的，由人们实现编制成具有各类特殊功能的信息组成。通常把这些信息，注入各类程序寄寓于各类媒体中，如RAM、ROM、磁带、磁盘、光盘、甚至纸带等。他们通常被作为计算机的主存或辅存的内容。</p>
+<p>计算机的软件通常可以分为两大类：系统软件和应用软件。</p>
+</li>
+<li><p>系统软件又称为系统程序，主要用来管理整个计算机系统，监视服务，使系统资源得到合理调度，确保高效运行。它包括：标准程序库、语言处理程序（如将汇编语言翻译成机器语言的汇编程序；将高级语言翻译成机器语言的编译程序）、操作系统（如批处理系统、分时系统、实时系统）、服务性程序（如诊断程序、调试程序、连接程序等）、数据库管理系统、网络软件等等。</p>
+</li>
+<li><p>应用软件又称为应用程序，它是用户根据任务需要所编制的各种程序。如科学计算程序，数据处理程序，过程控制程序，事务管理程序等。</p>
+</li>
+</ul>
+<h3 id="计算机的发展"><a href="#计算机的发展" class="headerlink" title="计算机的发展"></a>计算机的发展</h3><hr>
+<h4 id="硬件发展"><a href="#硬件发展" class="headerlink" title="硬件发展"></a>硬件发展</h4><ol>
+<li><strong>电子管和继电器时代（1940年代至1950年代）</strong>：早期的计算机使用电子管和继电器进行运算。这些设备庞大、耗能且不稳定，例如ENIAC就是一个典型的例子。虽然它们能够进行基本的计算，但是由于电子管容易损坏且需要频繁更换，因此效率很低。</li>
+<li><strong>集成电路的出现（1950年代至1960年代）</strong>：集成电路的发明使得电子元件能够集成在一块芯片上，大大提高了计算机的性能和稳定性。这一时期诞生了一些里程碑式的计算机，如IBM System/360。随着集成电路技术的进步，计算机的规模逐渐缩小，成本也逐渐下降。</li>
+<li><strong>个人计算机时代（1970年代至1980年代）</strong>：随着微处理器的发明，个人计算机开始普及。1975年，Altair 8800发布，标志着个人计算机的诞生。1977年，Apple II推出，进一步推动了个人计算机的发展。1981年，IBM发布了第一台IBM PC，开创了个人计算机的标准化时代。</li>
+<li><strong>移动计算和嵌入式系统（1990年代至今）</strong>：随着技术的进步，计算能力逐渐集成到更小、更便携的设备中。1990年代，个人数码助理（PDA）和智能手机开始出现。2007年，苹果公司发布了第一款iPhone，开启了智能手机时代。同时，嵌入式系统的应用范围也在不断扩大，从家用电器到汽车，再到工业自动化。</li>
+</ol>
+<h4 id="摩尔定律"><a href="#摩尔定律" class="headerlink" title="摩尔定律"></a>摩尔定律</h4><p>摩尔定律是一项关于集成电路发展速度的经验观察，由英特尔公司的创始人之一戈登·摩尔（Gordon Moore）在1965年提出。该定律的核心内容是：集成电路上可容纳的晶体管数量，大约每隔18个月会翻一番，或者说其性能每隔18个月翻倍。</p>
+<p>具体来说，摩尔定律可以总结为以下几点要点：</p>
+<ol>
+<li><strong>时间间隔</strong>：摩尔定律所描述的时间间隔为18个月，也有些人将其描述为每两年或每三年，但18个月是最常见的观察周期。</li>
+<li><strong>晶体管数量</strong>：摩尔定律关注的是集成电路上可容纳的晶体管数量。这意味着在相同的芯片面积上，晶体管数量将随时间呈指数级增长。</li>
+<li><strong>性能翻倍</strong>：随着晶体管数量的增加，集成电路的性能也会呈指数级增长，通常以性能翻倍的方式来衡量。</li>
+<li><strong>价格不变</strong>：摩尔定律假设在相同价格范围内，集成电路的晶体管数量会翻倍。这意味着虽然成本在增加，但每个晶体管的成本不会随之增加，从而使得每单位性能的成本越来越低。</li>
+<li><strong>应用范围</strong>：摩尔定律不仅适用于集成电路的晶体管数量，也可以推广到其他方面，如存储容量、传感器像素等。</li>
+</ol>
+<p>摩尔定律的提出和持续验证推动了计算机和信息技术领域的快速发展。它促进了硅谷的兴起，推动了计算机性能的提升，使得计算机应用更加广泛和普及。然而，随着技术的发展逐渐接近物理极限，摩尔定律在未来可能面临挑战，需要寻找新的技术和方法来持续推动计算机技术的进步。</p>
+<h4 id="软件发展"><a href="#软件发展" class="headerlink" title="软件发展"></a>软件发展</h4><ul>
+<li><p>操作系统的演变</p>
+<ul>
+<li>早期操作系统（1950年代至1960年代）：简单的批处理系统和分时操作系统，如IBM的OS/360。</li>
+<li>个人计算机时代（1970年代至1980年代）：微软的DOS（Disk Operating System）成为个人计算机的主流操作系统。1985年，微软推出了Windows 1.0，开启了图形用户界面的时代。</li>
+<li>互联网时代（1990年代至今）：Windows、MacOS和Linux等操作系统不断演进，加入了更多的功能和安全性。同时，移动操作系统如iOS和Android也逐渐崛起。</li>
+</ul>
+</li>
+<li><p>应用软件的发展</p>
+<ul>
+<li>办公软件：如Microsoft Office和Google Docs，使得办公工作更加高效。</li>
+<li>娱乐软件：游戏、多媒体软件和流媒体服务，如Steam、Netflix等，丰富了人们的娱乐生活。</li>
+<li>通讯软件：即时通讯应用（如WhatsApp、WeChat）、社交媒体平台（如Facebook、Twitter），改变了人们之间的沟通方式。</li>
+</ul>
+</li>
+<li><p>编程语言和开发工具</p>
+<ul>
+<li>高级编程语言的发展（如C、Python、Java）使得软件开发更加简单和高效。</li>
+<li>集成开发环境（IDE）的出现，如Visual Studio、Eclipse等，为开发者提供了更好的开发体验和工作流程。</li>
+</ul>
+</li>
+<li><p>人工智能和机器学习</p>
+<ul>
+<li>语音助手：如Apple的Siri、Amazon的Alexa和Google的Assistant，使得人机交互更加自然。</li>
+<li>智能推荐系统：网上购物、音乐和视频平台等的推荐系统利用机器学习算法来个性化推荐商品和内容。</li>
+<li>自动驾驶技术：基于人工智能和机器学习的自动驾驶技术正在逐渐成熟，有望改变交通运输行业。</li>
+</ul>
+</li>
+</ul>
+<h2 id="计算机系统的层次结构"><a href="#计算机系统的层次结构" class="headerlink" title="计算机系统的层次结构"></a>计算机系统的层次结构</h2><hr>
+<h3 id="计算机系统的基本组成"><a href="#计算机系统的基本组成" class="headerlink" title="计算机系统的基本组成"></a>计算机系统的基本组成</h3><h4 id="计算机硬件"><a href="#计算机硬件" class="headerlink" title="计算机硬件"></a>计算机硬件</h4><h5 id="冯·诺伊曼计算机"><a href="#冯·诺伊曼计算机" class="headerlink" title="冯·诺伊曼计算机"></a>冯·诺伊曼计算机</h5><p>冯·诺伊曼计算机是一种基于冯·诺伊曼结构设计的计算机体系结构，是现代计算机的基础模型之一。它由数学家约翰·冯·诺伊曼在二战期间提出，并在1945年发表了《报告书第一部分》（First Draft of a Report on the EDVAC）详细描述了这一概念。</p>
+<p>冯·诺伊曼计算机的主要特点包括：</p>
+<ol>
+<li><strong>存储程序：</strong> 冯·诺伊曼计算机采用存储程序的概念，即程序和数据都存储在同一种内存中，并且以二进制形式表示。这使得程序能够被存储、读取和修改，从而实现了程序的自动执行。</li>
+<li><strong>单一总线结构：</strong> 冯·诺伊曼计算机采用了单一总线结构，将CPU、存储器和输入/输出设备连接在一条总线上，通过总线进行数据和控制信号的传输。</li>
+<li><strong>按顺序执行指令：</strong> 冯·诺伊曼计算机按照存储在内存中的指令序列依次执行，每条指令都包括操作码和操作数，操作码指示执行的操作类型，操作数则指定操作的对象。</li>
+<li><strong>分离存储器和处理器：</strong> 冯·诺伊曼计算机将存储器（内存）和处理器（CPU）分开，通过总线进行数据传输和交换，从而实现了数据和指令的有效分离。</li>
+<li><strong>运算单元和控制单元：</strong> 冯·诺伊曼计算机包含了运算单元（Arithmetic Logic Unit, ALU）和控制单元（Control Unit, CU），ALU负责执行算术和逻辑运算，而CU则负责从存储器中取出指令、解码并执行。</li>
+</ol>
+<p>冯·诺伊曼计算机的提出标志着计算机科学的重要里程碑，它的基本原理被广泛应用于现代计算机体系结构的设计中，包括个人电脑、服务器、超级计算机等各种类型的计算机。</p>
+<h5 id="计算机的功能部件"><a href="#计算机的功能部件" class="headerlink" title="计算机的功能部件"></a>计算机的功能部件</h5><ol>
+<li><strong>存储器</strong>：用于存储数据和程序。包括内存（RAM）和长期存储设备（如硬盘驱动器、固态硬盘），内存用于临时存储程序和数据，长期存储设备则用于长期保存数据和程序。</li>
+<li><strong>运算器</strong>：执行计算机程序中的算术和逻辑运算。它包括算术逻辑单元（ALU），负责执行加减乘除等算术运算，以及逻辑运算，如与、或、非等。</li>
+<li><strong>控制器</strong>：从内存中获取指令，解码指令并控制数据流动。它包括控制单元（CU），负责协调各个部件的操作，确保程序按照指令顺利执行。</li>
+<li><strong>输入设备</strong>：用于输入数据和指令，包括键盘、鼠标、触摸屏、扫描仪和摄像头。这些设备允许用户向计算机提供信息。</li>
+<li><strong>输出设备</strong>：将计算机处理后的数据和结果展示给用户，包括显示器、打印机和音频设备（扬声器、耳机）。这些设备使用户能够获取计算机处理后的信息。</li>
+</ol>
+<p>一般将运算器和控制器继集成到同一芯片上，成为中央处理器（CPU）。CPU和主存储器共同构成主机，而除主机外的其它硬件装置（外存、I/O设备等）统称为外部设备，简称外设。</p>
+<h5 id="计算机软件"><a href="#计算机软件" class="headerlink" title="计算机软件"></a>计算机软件</h5><h6 id="软件的分类"><a href="#软件的分类" class="headerlink" title="软件的分类"></a>软件的分类</h6><p>软件按其功能分类，可分为系统软件和应用软件。</p>
+<h6 id="三个级别的计算机语言"><a href="#三个级别的计算机语言" class="headerlink" title="三个级别的计算机语言"></a>三个级别的计算机语言</h6><p>计算机语言通常可以分为三个级别：机器语言、汇编语言和高级语言。</p>
+<ol>
+<li><strong>机器语言</strong>：<ul>
+<li><strong>定义</strong>：机器语言是计算机能直接理解和执行的语言，由二进制代码（0和1）表示。</li>
+<li><strong>特点</strong>：与计算机硬件紧密相关，每个指令对应一组二进制码，难以阅读和编写，但计算机可以直接执行。</li>
+<li><strong>示例</strong>：例如，对于某个特定计算机体系结构，将某个指令编码为特定的二进制序列，如00110110。</li>
+</ul>
+</li>
+<li><strong>汇编语言</strong>：<ul>
+<li><strong>定义</strong>：汇编语言是机器语言的助记符表示法，使用助记符（如ADD、SUB等）代替二进制码，更易于理解和编写。</li>
+<li><strong>特点</strong>：每个汇编语言指令对应一条机器语言指令，需要通过汇编器将汇编代码转换为机器语言。</li>
+<li><strong>示例</strong>：将ADD指令翻译成对应的机器语言二进制码，如00011010。</li>
+</ul>
+</li>
+<li><strong>高级语言</strong>：<ul>
+<li><strong>定义</strong>：高级语言是更接近人类语言的编程语言，使用类似英语的语法和关键字，更易于理解和编写。</li>
+<li><strong>特点</strong>：与特定硬件无关，需要通过编译器或解释器将高级语言代码转换为机器语言。</li>
+<li><strong>示例</strong>：C、Java、Python等都是高级语言，程序员可以使用这些语言编写复杂的程序，然后通过编译或解释器转换为机器语言。</li>
+</ul>
+</li>
+</ol>
+<p>这三个级别的计算机语言在不同层次上表达程序逻辑，越高级的语言越接近人类思维，编写和理解起来也更为方便，但执行效率可能相对较低；而低级语言则更接近计算机硬件，执行效率高，但编写和理解难度较大。</p>
+<h3 id="计算机硬件的基本结构"><a href="#计算机硬件的基本结构" class="headerlink" title="计算机硬件的基本结构"></a>计算机硬件的基本结构</h3><p>冯·诺伊曼计算机的基本结构包括：</p>
+<ol>
+<li><strong>中央处理单元（CPU）：</strong> 负责执行指令、处理数据和控制计算机的其他部件。</li>
+<li><strong>存储器（Memory）：</strong> 包括内存和外部存储器，用于存储数据和程序指令。</li>
+<li><strong>输入/输出设备（I/O Devices）：</strong> 用于与外部世界进行交互，如键盘、鼠标、显示器、打印机等。</li>
+<li><strong>控制单元（Control Unit）：</strong> 负责控制指令的执行顺序和数据的传输。</li>
+<li><strong>算术逻辑单元（ALU）：</strong> 执行算术运算（如加法、减法）和逻辑运算（如与、或、非）。</li>
+<li><strong>总线（Bus）：</strong> 用于传输数据、指令和控制信号的集合，包括地址总线、数据总线和控制总线。</li>
+</ol>
+<p>这种结构的特点是指令和数据存储在同一存储器中，通过地址寻址来区分；程序和数据以二进制形式存储；指令和数据以相同格式存储在存储器中。</p>
+<h3 id="计算机软件和硬件的关系"><a href="#计算机软件和硬件的关系" class="headerlink" title="计算机软件和硬件的关系"></a>计算机软件和硬件的关系</h3><p>计算机软件和硬件之间存在密切的关系，它们互相依存，共同构成了完整的计算机系统。</p>
+<ol>
+<li><strong>相互依赖</strong>：软件需要硬件的支持才能运行，而硬件则需要软件来控制和操作。没有合适的软件，硬件无法发挥作用；同样，没有硬件支持，软件也无法执行。</li>
+<li><strong>软件控制硬件</strong>：软件通过操作系统和驱动程序来控制硬件的各种功能和操作。例如，操作系统通过驱动程序来管理硬件设备，让它们能够与软件进行交互。</li>
+<li><strong>硬件支持软件</strong>：硬件提供计算和存储等基本功能，为软件的执行提供必要的计算资源和存储空间。不同类型的软件可能需要不同配置的硬件来运行。</li>
+<li><strong>性能和效率</strong>：软件的设计和编写可以充分利用硬件的性能，提高计算机系统的效率和性能。同时，硬件的性能和功能水平也会影响到软件的运行效果和体验。</li>
+</ol>
+<p>总的来说，软件和硬件是相辅相成的，它们共同构成了计算机系统，软件决定了计算机的功能和特性，而硬件提供了软件运行的基础支持。</p>
+<h3 id="计算机系统的工作原理"><a href="#计算机系统的工作原理" class="headerlink" title="计算机系统的工作原理"></a>计算机系统的工作原理</h3><h4 id="源程序得到可执行程序"><a href="#源程序得到可执行程序" class="headerlink" title="源程序得到可执行程序"></a>源程序得到可执行程序</h4><p>计算机将源代码转换为可执行程序的过程称为编译（Compilation）或解释（Interpretation），取决于编程语言和编译器/解释器的使用情况。下面是通常的步骤：</p>
+<ol>
+<li><strong>编写源代码</strong>：程序员使用文本编辑器或集成开发环境（IDE）编写源代码，其中包含程序的逻辑和功能。</li>
+<li><strong>编译或解释</strong>：<ul>
+<li><strong>编译</strong>：对于静态类型语言（如C、C++、Java），源代码需要通过编译器进行编译，生成与特定平台兼容的机器码或字节码。编译器会检查语法错误和类型错误，并将源代码转换为可执行程序。</li>
+<li><strong>解释</strong>：对于动态类型语言（如Python、JavaScript），源代码由解释器逐行解释执行。解释器会将源代码逐行翻译为计算机能理解的指令，并实时执行代码。</li>
+</ul>
+</li>
+<li><strong>链接（可选）</strong>：对于使用多个源文件的程序，编译器还可能进行链接操作，将不同源文件中的代码组合成一个可执行程序。链接器会解析函数调用、全局变量等引用，并将它们连接到对应的定义。</li>
+<li><strong>生成可执行文件</strong>：编译器或解释器将转换后的代码生成可执行文件，其中包含了机器码、字节码或解释器所需的中间代码。</li>
+<li><strong>运行程序</strong>：生成的可执行文件可以在相应的操作系统上运行，用户可以通过命令行或双击图标来启动程序，操作系统将加载可执行文件到内存中，并执行其中的指令。</li>
+</ol>
+<p>这些步骤使得程序员能够将自己编写的源代码转换为计算机可以执行的可执行程序，从而实现程序的功能。</p>
+<h4 id="存储程序的基本思想"><a href="#存储程序的基本思想" class="headerlink" title="存储程序的基本思想"></a>存储程序的基本思想</h4><ol>
+<li><p>存储程序的基本思想是将计算机程序的指令和数据存储在计算机内存中，以便计算机可以按照程序的指令顺序执行操作。这个思想是现代计算机体系结构的核心之一，也是冯·诺伊曼体系结构的基础。</p>
+<p>冯·诺伊曼体系结构的基本思想包括：</p>
+<ol>
+<li><strong>存储器存储程序和数据</strong>：计算机的程序和数据被存储在内存中，程序和数据以二进制形式存储，可以随时读取和写入。</li>
+<li><strong>按顺序执行指令</strong>：计算机按照程序存储器中指令的顺序逐条执行指令，每条指令完成一个特定的操作，如算术运算、逻辑运算、数据传输等。</li>
+<li><strong>指令和数据共享存储器</strong>：程序和数据存储在同一存储器中，指令和数据可以交替存取，这种设计简化了计算机体系结构，提高了程序的灵活性和通用性。</li>
+<li><strong>自动顺序控制</strong>：计算机按照程序存储器中指令的顺序自动执行，不需要人工干预，程序的控制流由指令中的跳转指令和条件分支指令控制。</li>
+<li><strong>存储器地址寻址</strong>：计算机使用地址来访问存储器中的指令和数据，指令中的地址字段指示了下一条要执行的指令在存储器中的位置，数据也通过地址进行读取和写入。</li>
+</ol>
+<p>这些基本思想构成了现代计算机体系结构的基础，使得计算机能够高效地执行各种任务，从简单的算术运算到复杂的图形处理和人工智能任务。</p>
+</li>
+</ol>
+<h3 id="计算机系统的多级层次结构"><a href="#计算机系统的多级层次结构" class="headerlink" title="计算机系统的多级层次结构"></a>计算机系统的多级层次结构</h3><p>计算机系统的多级层次结构可以从不同的角度进行描述，包括硬件和软件两个方面：</p>
+<ol>
+<li><strong>硬件层次结构</strong>：<ul>
+<li><strong>物理层</strong>：包括处理器、内存、输入/输出设备、总线等实际的硬件组件。</li>
+<li><strong>逻辑层</strong>：定义了硬件如何工作和交互，包括指令集架构（ISA）和处理器微架构等。</li>
+<li><strong>组成层</strong>：由逻辑门、寄存器、ALU（算术逻辑单元）等组成，实现了基本的逻辑和算术操作。</li>
+<li><strong>微体系结构层</strong>：定义了处理器的内部结构和组织，包括流水线、缓存层次结构等。</li>
+<li><strong>电子层</strong>：描述了硬件的电子元件和电路结构，如晶体管、电容器等。</li>
+</ul>
+</li>
+<li><strong>软件层次结构</strong>：<ul>
+<li><strong>应用层</strong>：包括用户直接使用的应用程序，如浏览器、文字处理软件等。</li>
+<li><strong>操作系统层</strong>：管理计算机硬件资源和提供服务给应用程序，如Windows、macOS、Linux等操作系统。</li>
+<li><strong>中间件层</strong>：提供在不同软件应用之间进行通信和交互的平台，如数据库管理系统（DBMS）、Web服务器等。</li>
+<li><strong>编程语言层</strong>：定义了程序员编写软件的语法和语义，包括高级编程语言（如Python、Java）和低级编程语言（如汇编语言）。</li>
+<li><strong>体系结构层</strong>：提供了软件和硬件之间的接口和抽象，使得软件可以跨平台运行，如虚拟机、编译器等。</li>
+</ul>
+</li>
+</ol>
+<p>这些层次结构相互交织，共同构成了计算机系统的复杂性。硬件层次提供了计算机系统的基本功能和性能，而软件层次则定义了如何利用硬件资源来实现各种应用和服务</p>
+<h3 id="计算机系统的工作原理-1"><a href="#计算机系统的工作原理-1" class="headerlink" title="计算机系统的工作原理"></a>计算机系统的工作原理</h3><p>计算机系统的工作原理可以简单概括为：操作系统管理硬件资源，应用程序通过操作系统与硬件交互，CPU执行指令并处理数据，从而实现各种功能和任务。整个过程是一个不断循环的过程，用户输入数据和指令，计算机处理这些数据和指令，并输出处理结果，然后等待下一轮输入。</p>
+<ol>
+<li><p><strong>主存储器</strong></p>
+<p>​        主存储器（简称主存或内存）包括了存储体M、各种逻辑部件以及控制电路等。存储体由许多存储单元组成，每个存储单元又包含若干个存储元件；每个存储元件只能存放一位二进制代码（0或者1）。这样，每个存储单元可以存储遗传二进制代码，这就被称为一个“存储字”；存储字的二进制位数称为“存储字长”。</p>
+<p>​        主存中的每个存储单元有一个唯一的编号，叫做存储单元的“地址”（Address）。主存的工作方式就是按照存储单元的地址，来实现对存储字各位的存（写入）取（读出）。这种存储方式叫做“按地址访问存储器”。</p>
+<p>​        为了实现按地址访问的方式，主存中还必须配置两个寄存器：<strong>MAR</strong>和<strong>MDR</strong></p>
+<ul>
+<li><p><code>MAR</code>（存储器地址寄存器）：用来存放想要访问的存储单元的地址，它的位数决定了能访问的存储单元的最大个数。</p>
+</li>
+<li><p><code>MDR</code>（存储器数据寄存器）：用来存放从存储单元中取出，或者准备向存储体单元存入的数据，他的位数和存储字相等。</p>
+<p>​    当然，如果想要完整的实现一个存储数据的操作，还需要CPU给主存加上各种控制信号，比如读命令、写命令以及地址编码驱动信号等。随着硬件技术的发展，主存现在都是统一制作的大规模集成电路芯片，所以一般都将MAR和MDR集成在CPU芯片中。</p>
+</li>
+</ul>
+</li>
+<li><p><strong>运算器</strong></p>
+<p>运算器包括了一个算数逻辑单元（ALU）和最少三个寄存器。</p>
+<ul>
+<li>ACC：累加器</li>
+<li>MQ：乘商寄存器</li>
+<li>X：操作数寄存器</li>
+</ul>
+<p>这三个寄存器在完成不同的算数运算时，所存放的操作数也各不相同。</p>
+<p>不同机器的运算器结构也有所不同，有的机器用MDR取代X寄存器。</p>
+</li>
+<li><p><strong>控制器</strong></p>
+<p>控制器由控制单元（CU）和程序计数器（PC）、指令寄存器（IR）组成。</p>
+<p>PC：程序计数器，用来存放当前将要执行指令的地址。他与主存的MAR之间有一条直接通路，且具有自动加1的功能，也就时可以自动形成下一条指令的地址。</p>
+<p>IR：指令寄存器，用来存放当前的指令。IR的内容来自主存的MDR，包含了操作码和地址码。IR中的操作码OP（IR）会送至CU，可以记作OP（IR）-&gt;CU，用来分析指令；而地址码Ad(IR)作为操作数的地址送至储存器的MAR，可以记作Ad（IR）-&gt;MAR。</p>
+<p>CU是控制器的核心组件，用来分析当前指令所需完成的操作，并发出各种位操作命令序列，从而控制所有被控对象。控制器是计算机的神经中枢，由他指挥各部件自动协调地工作；完成一条指令操作，需要取指、分析和执行三个阶段。</p>
+</li>
+<li><p><strong>I/O</strong></p>
+<p>I/O系统包括各种输入输出设备及其响应的接口。每一种I/O设备都由I/O接口与主机联系，他接收CU发出的各种控制命令，并完成相应的操作。</p>
+</li>
+</ol>
+<h2 id="计算机性能指标"><a href="#计算机性能指标" class="headerlink" title="计算机性能指标"></a>计算机性能指标</h2><hr>
+<p>衡量一台计算机的性能室友多项技术指标综合确定的，既包含硬件的各类性能，又包括软件的各种功能。</p>
+<h3 id="主要性能指标"><a href="#主要性能指标" class="headerlink" title="主要性能指标"></a>主要性能指标</h3><ol>
+<li><p><strong>机器字长</strong></p>
+<p>​        机器字长，是指CPU一次能处理数据的位数，也就是CPU内部用于整数运算的数据通路的宽度。字长通常就等于CPU的通用寄存器宽度，也就是CPU内用于整数运算的运算的运算器的位数，它反映了计算机处理信息的能力。我们平常所说“一台16位或32位或64位的机器”，这里的16，32，64就是指字长。</p>
+<p>​        字长越长，数的表示范围也越大，精度也越高。机器的字长也会影响机器的运算速度。倘若CPU字长较短，又要运算位数较多的数据，那么需要经过两次或多次的运算才能完成，这样势必影响征集的运行速度。当然，机器字长对于硬件的造价也有较大的影响。他将直接影响加法器（或ALU）、数据总线以及存储字长的位数。</p>
+<ul>
+<li><p>指令字长：一条指令中包含的二进制代码的位数。</p>
+</li>
+<li><p>存储字长：一个存储单元中存储的二进制代码的长度。</p>
+<p>​    指令字长和存储字长，都必须是字节（byte）的整数倍。指令字长一般取存储字长的整数倍：如果指令字长等于存储字长的2倍，那么取一条指令就需要2个机器周期；如果指令字长等于存储字长，那么取指周期就等于机器周期。</p>
+</li>
+</ul>
+</li>
+<li><p><strong>数据通路带宽</strong></p>
+<p>​        数据通路带宽，是指数据总线一次所能并行传送信息的位数，他关系到数据的传送能力。这里所说的数据通路带宽是指外部数据总线的宽度，它与CPU内部的数据总线宽度（机器字长）可能不同。</p>
+</li>
+<li><p><strong>存储容量</strong></p>
+<p>​        存储器的容量，包括主容量和辅存容量。我们一般主要关心主存容量。</p>
+<p>​        主存容量是指主存中所能存储信息（二进制代码）的最大容量，通常以字节数来衡量。</p>
+<p>​                存储容量 = 存储单元个数 X 存储字长</p>
+<p>​        在主存储器中，MAR的位数反应了存储单元的个数，MDR的位数则反应了存储字的长度。例如，MAR为16位，表示2^16^ = 65536，也就是说对应的存储体内有65536个存储单元（一般称为64K内存，1K=1024）；而如果MDR为32位，那么主存的存储容量为2^16^ X 32 = 2^21^ = 2M位 （1M = 2^20^)。</p>
+<p>​        现代计算机中常以字节的个数来描述容量的大小，一个字节 （Byte）被定义为8位二进制代码。所以上述存储容量是2M位 （bit），也可以用2^18^字节 （Byte，简写为B）表示，记作2^18^B或256KB。</p>
+<p>​        同理，辅存容量也可以用字节数来表示，例如，某机辅存（如硬盘）容量为128GB （1G = 1KM = 2^30^）。</p>
+</li>
+<li><p><strong>运算速度</strong></p>
+<p>​        计算机的运算速度与许多因素有关，如机器的主频、CPU的结构、执行什么样的操作、主存本身的速度（主存速度快，取指、取数就快）等等都有关。</p>
+</li>
+</ol>
+<h3 id="专业术语解释"><a href="#专业术语解释" class="headerlink" title="专业术语解释"></a>专业术语解释</h3><p><strong>吞吐量</strong>：系统在单位时间内处理请求的数量，主要取决于主存的存取周期。</p>
+<p><strong>响应时间</strong>：从用户向计算机发送一个请求，到系统对该请求做出响应并获得所需结果的时间。通常包括CPU时间（计算机执行程序的时间）和等待时间（用于磁盘访问、存储器访问、I/O操作等的时间）。</p>
+<p><strong>主频（CPU的时钟频率）</strong>：机器内部主时钟的频率，他是衡量机器速度的重要参数。对统一型号的计算机，主频越高，完成指令的一个步骤所用的时间越短，执行指令的速度越快。通常以赫兹（Hz）为单位。</p>
+<p><strong>CPU时钟周期</strong>：节拍脉冲的宽度或周期，也就是主频的倒数，他是CPU中最小的时间单位。</p>
+<p>​            <code>CPU时钟周期 = 1/主频</code></p>
+<p><strong>CPI</strong>：执行一条指令所需的时钟周期数。对一个程序或一台机器来说，CPI指的是该程序或该机器指令集中所有指令执行所需要的平均时钟周期数。</p>
+<p><strong>CPU执行时间</strong>：运行一个程序所花费的时间。</p>
+<p>​            <code>CPU执行时间 = （指令数 x CPI ) / 主频</code></p>
+<p>对于同一个程序，CPU的执行时间就代表了CPU的性能，它主要取决于三个要素：主频、CPI和指令数。这三者是相互制约的。不同的机器可以有不同的指令集，更改指令集可以让程序的指令数更少，但CPI可能就会增大；同时可能引起CPU结构的调整，从而造成主频的降低。</p>
+]]></content>
+      <tags>
+        <tag>computer</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>硅谷甄选</title>
+    <url>/2024/05/08/%E7%A1%85%E8%B0%B7%E7%94%84%E9%80%89/</url>
+    <content><![CDATA[<h1 id="Vue3组件通信方式"><a href="#Vue3组件通信方式" class="headerlink" title="Vue3组件通信方式"></a>Vue3组件通信方式</h1><h2 id="vue2组件通信方式举例"><a href="#vue2组件通信方式举例" class="headerlink" title="vue2组件通信方式举例"></a>vue2组件通信方式举例</h2><ul>
+<li>props：可以实现父子组件、子父组件、甚至兄弟组件通信</li>
+<li>自定义事件：可以实现任意组件通信</li>
+<li>全局事件总价$bus：可以时间任意组件通信</li>
+<li>pubsub：发布订阅模式实现任意组件通信</li>
+<li>vuex：集中式管理容器，实现任意组件通信</li>
+<li>ref：父组件获取子组件示例VC，获取子组件的响应式数据以及方法</li>
+<li>slot：插槽（默认插槽、具名插槽、作用域插槽）实现父子组件通信……</li>
+</ul>
+<h2 id="props"><a href="#props" class="headerlink" title="props"></a>props</h2><p>props可以实现父子组件通信,在vue3中我们可以通过<code>defineProps</code>获取父组件传递的数据。且在组件内部不需要引入<code>defineProps</code>方法可以直接使用！</p>
+<p><strong>父组件给子组件传递数据</strong></p>
+<figure class="highlight typescript"><table><tr><td class="code"><pre><span class="line">&lt;<span class="title class_">Child</span> info=<span class="string">&quot;我爱祖国&quot;</span> :money=<span class="string">&quot;money&quot;</span>&gt;&lt;/<span class="title class_">Child</span>&gt;</span><br></pre></td></tr></table></figure>
+<p><strong>子组件获取父组件传递数据:方式1</strong></p>
+<figure class="highlight typescript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> props = <span class="title function_">defineProps</span>(&#123;</span><br><span class="line">  <span class="attr">info</span>:&#123;</span><br><span class="line">   <span class="attr">type</span>:<span class="title class_">String</span>,<span class="comment">//接受的数据类型</span></span><br><span class="line">   <span class="attr">default</span>:<span class="string">&#x27;默认参数&#x27;</span>,<span class="comment">//接受默认数据</span></span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="attr">money</span>:&#123;</span><br><span class="line">   <span class="attr">type</span>:<span class="title class_">Number</span>,</span><br><span class="line">   <span class="attr">default</span>:<span class="number">0</span></span><br><span class="line">&#125;&#125;)</span><br></pre></td></tr></table></figure>
+<p><strong>子组件获取父组件传递数据:方式2</strong></p>
+<figure class="highlight typescript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> props = <span class="title function_">defineProps</span>([<span class="string">&quot;info&quot;</span>,<span class="string">&#x27;money&#x27;</span>]);</span><br></pre></td></tr></table></figure>
+<p>子组件获取到props数据就可以在模板中使用了,但是切记props是只读的(只能读取，不能修改)</p>
+<h2 id="自定义事件"><a href="#自定义事件" class="headerlink" title="自定义事件"></a>自定义事件</h2><hr>
+<p>在<code>vue</code>框架中事件分为两种:</p>
+<ol>
+<li>原生的DOM事件</li>
+<li>自定义事件</li>
+</ol>
+<p>原生DOM事件可以让用户与网页进行交互，比如click、dbclick、change、mouseenter、mouseleave….</p>
+<p>自定义事件可以实现子组件给父组件传递数据</p>
+<h3 id="原生DOM事件"><a href="#原生DOM事件" class="headerlink" title="原生DOM事件"></a>原生DOM事件</h3><p>代码如下:</p>
+<figure class="highlight typescript"><table><tr><td class="code"><pre><span class="line">&lt;pre <span class="meta">@click</span>=<span class="string">&quot;handler&quot;</span>&gt;</span><br><span class="line">     我是祖国的老花骨朵</span><br><span class="line">&lt;/pre&gt;</span><br></pre></td></tr></table></figure>
+<p>当前代码级给pre标签绑定原生DOM事件点击事件,默认会给事件回调注入event事件对象。当然点击事件想注入多个参数可以按照下图操作。但是切记注入的事件对象务必叫做$event.</p>
+<figure class="highlight typescript"><table><tr><td class="code"><pre><span class="line">&lt;div <span class="meta">@click</span>=<span class="string">&quot;handler1(1,2,3,$event)&quot;</span>&gt;我要传递多个参数&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+<p>在vue3框架<code>click</code>、<code>dbclick</code>、<code>change</code>(这类原生DOM事件),不管是在标签、自定义标签上(组件标签)都是原生DOM事件。</p>
+<p><strong><!--vue2中却不是这样的,在vue2中组件标签需要通过native修饰符才能变为原生DOM事件--></strong></p>
+<h3 id="自定义事件-1"><a href="#自定义事件-1" class="headerlink" title="自定义事件"></a>自定义事件</h3><p>自定义事件可以实现子组件给父组件传递数据.在项目中是比较常用的。</p>
+<p>比如在父组件内部给子组件(Event2)绑定一个自定义事件</p>
+<figure class="highlight typescript"><table><tr><td class="code"><pre><span class="line">&lt;<span class="title class_">Event2</span>  <span class="meta">@xxx</span>=<span class="string">&quot;handler3&quot;</span>&gt;&lt;/<span class="title class_">Event2</span>&gt;</span><br></pre></td></tr></table></figure>
+<p>在Event2子组件内部触发这个自定义事件</p>
+<figure class="highlight typescript"><table><tr><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">  <span class="language-xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;<span class="name">h1</span>&gt;</span>我是子组件2<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;<span class="name">button</span> @<span class="attr">click</span>=<span class="string">&quot;handler&quot;</span>&gt;</span>点击我触发xxx自定义事件<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line">&lt;/template&gt;</span><br><span class="line"></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">script</span> <span class="attr">setup</span> <span class="attr">lang</span>=<span class="string">&quot;ts&quot;</span>&gt;</span><span class="language-javascript"></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"><span class="keyword">let</span> $emit = <span class="title function_">defineEmits</span>([<span class="string">&quot;xxx&quot;</span>]);</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"><span class="keyword">const</span> <span class="title function_">handler</span> = (<span class="params"></span>) =&gt; &#123;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">  $emit(<span class="string">&quot;xxx&quot;</span>, <span class="string">&quot;法拉利&quot;</span>, <span class="string">&quot;茅台&quot;</span>);</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">&#125;;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">style</span> <span class="attr">scoped</span>&gt;</span></span></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
+<p>我们会发现在script标签内部，使用了<code>defineEmits</code>方法，此方法是<code>vue3</code>提供的方法,不需要引入直接使用。<code>defineEmits</code>方法执行，传递一个数组，数组元素即为将来组件需要触发的自定义事件类型，此方执行会返回一个$emit方法用于触发自定义事件。</p>
+<p>当点击按钮的时候，事件回调内部调用<code>$emit</code>方法去触发自定义事件,第一个参数为触发事件类型，第二个、三个、N个参数即为传递给父组件的数据。</p>
+<p>需要注意的是:代码如下</p>
+<figure class="highlight typescript"><table><tr><td class="code"><pre><span class="line">&lt;<span class="title class_">Event2</span>  <span class="meta">@xxx</span>=<span class="string">&quot;handler3&quot;</span> <span class="meta">@click</span>=<span class="string">&quot;handler&quot;</span>&gt;&lt;/<span class="title class_">Event2</span>&gt;</span><br></pre></td></tr></table></figure>
+<p>正常说组件标签书写@click应该为原生DOM事件,但是如果子组件内部通过<code>defineEmits</code>定义就变为自定义事件了</p>
+<figure class="highlight typescript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> $emit = <span class="title function_">defineEmits</span>([<span class="string">&quot;xxx&quot;</span>,<span class="string">&#x27;click&#x27;</span>]);</span><br></pre></td></tr></table></figure>
+<h2 id="全局事件总线"><a href="#全局事件总线" class="headerlink" title="全局事件总线"></a>全局事件总线</h2><hr>
+<p>全局事件总线可以实现任意组件通信，在vue2中可以根据VM与VC关系推出全局事件总线。</p>
+<p>但是在vue3中没有Vue构造函数，也就没有Vue.prototype.以及组合式API写法没有this，</p>
+<p>那么在Vue3想实现全局事件的总线功能就有点不现实啦，如果想在Vue3中使用全局事件总线功能</p>
+<p>可以使用插件mitt实现。</p>
+<p><strong>mitt:官网地址:<a href="https://www.npmjs.com/package/mitt">https://www.npmjs.com/package/mitt</a></strong></p>
+<h3 id="v-model"><a href="#v-model" class="headerlink" title="v-model"></a>v-model</h3><p>v-model指令可是收集表单数据(数据双向绑定)，除此之外它也可以实现父子组件数据同步。</p>
+<p>而v-model实指利用props[modelValue]与自定义事件[update:modelValue]实现的。</p>
+<p>下方代码:相当于给组件Child传递一个props(modelValue)与绑定一个自定义事件update:modelValue</p>
+<p>实现父子组件数据同步</p>
+<figure class="highlight typescript"><table><tr><td class="code"><pre><span class="line">&lt;<span class="title class_">Child</span> v-model=<span class="string">&quot;msg&quot;</span>&gt;&lt;/<span class="title class_">Child</span>&gt;</span><br></pre></td></tr></table></figure>
+<p>在vue3中一个组件可以通过使用多个v-model,让父子组件多个数据同步,下方代码相当于给组件Child传递两个props分别是pageNo与pageSize，以及绑定两个自定义事件update:pageNo与update:pageSize实现父子数据同步</p>
+<figure class="highlight typescript"><table><tr><td class="code"><pre><span class="line">&lt;<span class="title class_">Child</span> v-<span class="attr">model</span>:pageNo=<span class="string">&quot;msg&quot;</span> v-<span class="attr">model</span>:pageSize=<span class="string">&quot;msg1&quot;</span>&gt;&lt;/<span class="title class_">Child</span>&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="useAttrs"><a href="#useAttrs" class="headerlink" title="useAttrs"></a>useAttrs</h3><p>在Vue3中可以利用useAttrs方法获取组件的属性与事件(包含:原生DOM事件或者自定义事件),次函数功能类似于Vue2框架中$attrs属性与$listeners方法。</p>
+<p>比如:在父组件内部使用一个子组件my-button</p>
+<figure class="highlight typescript"><table><tr><td class="code"><pre><span class="line">&lt;my-button <span class="keyword">type</span>=<span class="string">&quot;success&quot;</span> size=<span class="string">&quot;small&quot;</span> title=<span class="string">&#x27;标题&#x27;</span> <span class="meta">@click</span>=<span class="string">&quot;handler&quot;</span>&gt;&lt;/my-button&gt;</span><br></pre></td></tr></table></figure>
+<p>子组件内部可以通过useAttrs方法获取组件属性与事件.因此你也发现了，它类似于props,可以接受父组件传递过来的属性与属性值。需要注意如果defineProps接受了某一个属性，useAttrs方法返回的对象身上就没有相应属性与属性值。</p>
+<figure class="highlight typescript"><table><tr><td class="code"><pre><span class="line">&lt;script setup lang=<span class="string">&quot;ts&quot;</span>&gt;</span><br><span class="line"><span class="keyword">import</span> &#123;useAttrs&#125; <span class="keyword">from</span> <span class="string">&#x27;vue&#x27;</span>;</span><br><span class="line"><span class="keyword">let</span> $attrs = <span class="title function_">useAttrs</span>();</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="ref与-parent"><a href="#ref与-parent" class="headerlink" title="ref与$parent"></a>ref与$parent</h2><hr>
+<p>ref,提及到ref可能会想到它可以获取元素的DOM或者获取子组件实例的VC。既然可以在父组件内部通过ref获取子组件实例VC，那么子组件内部的方法与响应式数据父组件可以使用的。</p>
+<p>比如:在父组件挂载完毕获取组件实例</p>
+<p>父组件内部代码:</p>
+<figure class="highlight typescript"><table><tr><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">  <span class="language-xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;<span class="name">h1</span>&gt;</span>ref与$parent<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;<span class="name">Son</span> <span class="attr">ref</span>=<span class="string">&quot;son&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">Son</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line">&lt;/template&gt;</span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">script</span> <span class="attr">setup</span> <span class="attr">lang</span>=<span class="string">&quot;ts&quot;</span>&gt;</span><span class="language-javascript"></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"><span class="keyword">import</span> <span class="title class_">Son</span> <span class="keyword">from</span> <span class="string">&quot;./Son.vue&quot;</span>;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"><span class="keyword">import</span> &#123; onMounted, ref &#125; <span class="keyword">from</span> <span class="string">&quot;vue&quot;</span>;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"><span class="keyword">const</span> son = <span class="title function_">ref</span>();</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"><span class="title function_">onMounted</span>(<span class="function">() =&gt;</span> &#123;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">  <span class="variable language_">console</span>.<span class="title function_">log</span>(son.<span class="property">value</span>);</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">&#125;);</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
+<p>但是需要注意，如果想让父组件获取子组件的数据或者方法需要通过defineExpose对外暴露,因为vue3中组件内部的数据对外“关闭的”，外部不能访问</p>
+<figure class="highlight typescript"><table><tr><td class="code"><pre><span class="line">&lt;script setup lang=<span class="string">&quot;ts&quot;</span>&gt;</span><br><span class="line"><span class="keyword">import</span> &#123; ref &#125; <span class="keyword">from</span> <span class="string">&quot;vue&quot;</span>;</span><br><span class="line"><span class="comment">//数据</span></span><br><span class="line"><span class="keyword">let</span> money = <span class="title function_">ref</span>(<span class="number">1000</span>);</span><br><span class="line"><span class="comment">//方法</span></span><br><span class="line"><span class="keyword">const</span> <span class="title function_">handler</span> = (<span class="params"></span>)=&gt;&#123;</span><br><span class="line">&#125;</span><br><span class="line"><span class="title function_">defineExpose</span>(&#123;</span><br><span class="line">  money,</span><br><span class="line">   handler</span><br><span class="line">&#125;)</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<p>$parent可以获取某一个组件的父组件实例VC,因此可以使用父组件内部的数据与方法。必须子组件内部拥有一个按钮点击时候获取父组件实例，当然父组件的数据与方法需要通过defineExpose方法对外暴露</p>
+<figure class="highlight typescript"><table><tr><td class="code"><pre><span class="line">&lt;button <span class="meta">@click</span>=<span class="string">&quot;handler($parent)&quot;</span>&gt;点击我获取父组件实例&lt;/button&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="provide与inject"><a href="#provide与inject" class="headerlink" title="provide与inject"></a>provide与inject</h2><hr>
+<p><strong>provide[提供]</strong></p>
+<p><strong>inject[注入]</strong></p>
+<p>vue3提供两个方法provide与inject,可以实现隔辈组件传递参数</p>
+<p>组件组件提供数据:</p>
+<p>provide方法用于提供数据，此方法执需要传递两个参数,分别提供数据的key与提供数据value</p>
+<figure class="highlight typescript"><table><tr><td class="code"><pre><span class="line">&lt;script setup lang=<span class="string">&quot;ts&quot;</span>&gt;</span><br><span class="line"><span class="keyword">import</span> &#123;provide&#125; <span class="keyword">from</span> <span class="string">&#x27;vue&#x27;</span></span><br><span class="line"><span class="title function_">provide</span>(<span class="string">&#x27;token&#x27;</span>,<span class="string">&#x27;admin_token&#x27;</span>);</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<p>后代组件可以通过inject方法获取数据,通过key获取存储的数值</p>
+<figure class="highlight typescript"><table><tr><td class="code"><pre><span class="line">&lt;script setup lang=<span class="string">&quot;ts&quot;</span>&gt;</span><br><span class="line"><span class="keyword">import</span> &#123;inject&#125; <span class="keyword">from</span> <span class="string">&#x27;vue&#x27;</span></span><br><span class="line"><span class="keyword">let</span> token = <span class="title function_">inject</span>(<span class="string">&#x27;token&#x27;</span>);</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="pinia"><a href="#pinia" class="headerlink" title="pinia"></a>pinia</h2><hr>
+<p><strong>pinia官网:<a href="https://pinia.web3doc.top/">https://pinia.web3doc.top/</a></strong></p>
+<p>pinia也是集中式管理状态容器,类似于vuex。但是核心概念没有mutation、modules,使用方式参照官网</p>
+<h2 id="slot"><a href="#slot" class="headerlink" title="slot"></a>slot</h2><hr>
+<p>插槽：默认插槽、具名插槽、作用域插槽可以实现父子组件通信.</p>
+<p><strong>默认插槽:</strong></p>
+<p>在子组件内部的模板中书写slot全局组件标签</p>
+<figure class="highlight typescript"><table><tr><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">  <span class="language-xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;<span class="name">slot</span>&gt;</span><span class="tag">&lt;/<span class="name">slot</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line">&lt;/template&gt;</span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">script</span> <span class="attr">setup</span> <span class="attr">lang</span>=<span class="string">&quot;ts&quot;</span>&gt;</span></span></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">style</span> <span class="attr">scoped</span>&gt;</span></span></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
+<p>在父组件内部提供结构：Todo即为子组件,在父组件内部使用的时候，在双标签内部书写结构传递给子组件</p>
+<p>注意开发项目的时候默认插槽一般只有一个</p>
+<figure class="highlight typescript"><table><tr><td class="code"><pre><span class="line">&lt;<span class="title class_">Todo</span>&gt;</span><br><span class="line">  <span class="language-xml"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>我是默认插槽填充的结构<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span></span><br><span class="line">&lt;/<span class="title class_">Todo</span>&gt;</span><br></pre></td></tr></table></figure>
+<p><strong>具名插槽：</strong></p>
+<p>顾名思义，此插槽带有名字在组件内部留多个指定名字的插槽。</p>
+<p>下面是一个子组件内部,模板中留两个插槽</p>
+<figure class="highlight typescript"><table><tr><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">  <span class="language-xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;<span class="name">h1</span>&gt;</span>todo<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;<span class="name">slot</span> <span class="attr">name</span>=<span class="string">&quot;a&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">slot</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;<span class="name">slot</span> <span class="attr">name</span>=<span class="string">&quot;b&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">slot</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line">&lt;/template&gt;</span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">script</span> <span class="attr">setup</span> <span class="attr">lang</span>=<span class="string">&quot;ts&quot;</span>&gt;</span></span></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">style</span> <span class="attr">scoped</span>&gt;</span></span></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
+<p>父组件内部向指定的具名插槽传递结构。需要注意v-slot：可以替换为#</p>
+<figure class="highlight typescript"><table><tr><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">  <span class="language-xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;<span class="name">h1</span>&gt;</span>slot<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;<span class="name">Todo</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">      <span class="tag">&lt;<span class="name">template</span> <span class="attr">v-slot:a</span>&gt;</span>  //可以用#a替换</span></span><br><span class="line"><span class="language-xml">        <span class="tag">&lt;<span class="name">div</span>&gt;</span>填入组件A部分的结构<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">      <span class="tag">&lt;/<span class="name">template</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">      <span class="tag">&lt;<span class="name">template</span> <span class="attr">v-slot:b</span>&gt;</span>//可以用#b替换</span></span><br><span class="line"><span class="language-xml">        <span class="tag">&lt;<span class="name">div</span>&gt;</span>填入组件B部分的结构<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">      <span class="tag">&lt;/<span class="name">template</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;/<span class="name">Todo</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line">&lt;/template&gt;</span><br><span class="line"></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">script</span> <span class="attr">setup</span> <span class="attr">lang</span>=<span class="string">&quot;ts&quot;</span>&gt;</span><span class="language-javascript"></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"><span class="keyword">import</span> <span class="title class_">Todo</span> <span class="keyword">from</span> <span class="string">&quot;./Todo.vue&quot;</span>;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">style</span> <span class="attr">scoped</span>&gt;</span></span></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
+<p><strong>作用域插槽</strong></p>
+<p>作用域插槽：可以理解为，子组件数据由父组件提供，但是子组件内部决定不了自身结构与外观(样式)</p>
+<p>子组件Todo代码如下:</p>
+<figure class="highlight typescript"><table><tr><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">  <span class="language-xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;<span class="name">h1</span>&gt;</span>todo<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;<span class="name">ul</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">     <span class="comment">&lt;!--组件内部遍历数组--&gt;</span></span></span><br><span class="line"><span class="language-xml">      <span class="tag">&lt;<span class="name">li</span> <span class="attr">v-for</span>=<span class="string">&quot;(item,index) in todos&quot;</span> <span class="attr">:key</span>=<span class="string">&quot;item.id&quot;</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">         <span class="comment">&lt;!--作用域插槽将数据回传给父组件--&gt;</span></span></span><br><span class="line"><span class="language-xml">         <span class="tag">&lt;<span class="name">slot</span> <span class="attr">:</span>$<span class="attr">row</span>=<span class="string">&quot;item&quot;</span> <span class="attr">:</span>$<span class="attr">index</span>=<span class="string">&quot;index&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">slot</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">      <span class="tag">&lt;/<span class="name">li</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line">&lt;/template&gt;</span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">script</span> <span class="attr">setup</span> <span class="attr">lang</span>=<span class="string">&quot;ts&quot;</span>&gt;</span><span class="language-javascript"></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"><span class="title function_">defineProps</span>([<span class="string">&#x27;todos&#x27;</span>]);<span class="comment">//接受父组件传递过来的数据</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">style</span> <span class="attr">scoped</span>&gt;</span></span></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
+<p>父组件内部代码如下:</p>
+<figure class="highlight typescript"><table><tr><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">  <span class="language-xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;<span class="name">h1</span>&gt;</span>slot<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;<span class="name">Todo</span> <span class="attr">:todos</span>=<span class="string">&quot;todos&quot;</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">      <span class="tag">&lt;<span class="name">template</span> <span class="attr">v-slot</span>=<span class="string">&quot;&#123;$row,$index&#125;&quot;</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">         <span class="comment">&lt;!--父组件决定子组件的结构与外观--&gt;</span></span></span><br><span class="line"><span class="language-xml">         <span class="tag">&lt;<span class="name">span</span> <span class="attr">:style</span>=<span class="string">&quot;&#123;color:$row.done?&#x27;green&#x27;:&#x27;red&#x27;&#125;&quot;</span>&gt;</span>&#123;&#123;$row.title&#125;&#125;<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">      <span class="tag">&lt;/<span class="name">template</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;/<span class="name">Todo</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line">&lt;/template&gt;</span><br><span class="line"></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">script</span> <span class="attr">setup</span> <span class="attr">lang</span>=<span class="string">&quot;ts&quot;</span>&gt;</span><span class="language-javascript"></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"><span class="keyword">import</span> <span class="title class_">Todo</span> <span class="keyword">from</span> <span class="string">&quot;./Todo.vue&quot;</span>;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"><span class="keyword">import</span> &#123; ref &#125; <span class="keyword">from</span> <span class="string">&quot;vue&quot;</span>;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"><span class="comment">//父组件内部数据</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"><span class="keyword">let</span> todos = <span class="title function_">ref</span>([</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">  &#123; <span class="attr">id</span>: <span class="number">1</span>, <span class="attr">title</span>: <span class="string">&quot;吃饭&quot;</span>, <span class="attr">done</span>: <span class="literal">true</span> &#125;,</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">  &#123; <span class="attr">id</span>: <span class="number">2</span>, <span class="attr">title</span>: <span class="string">&quot;睡觉&quot;</span>, <span class="attr">done</span>: <span class="literal">false</span> &#125;,</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">  &#123; <span class="attr">id</span>: <span class="number">3</span>, <span class="attr">title</span>: <span class="string">&quot;打豆豆&quot;</span>, <span class="attr">done</span>: <span class="literal">true</span> &#125;,</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">]);</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">style</span> <span class="attr">scoped</span>&gt;</span></span></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
+]]></content>
+      <tags>
+        <tag>前端项目</tag>
       </tags>
   </entry>
   <entry>
@@ -1548,560 +2102,6 @@
 ]]></content>
       <tags>
         <tag>js</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>计算机组成原理</title>
-    <url>/2024/05/02/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/</url>
-    <content><![CDATA[<h1 id="第一章-计算机系统概述"><a href="#第一章-计算机系统概述" class="headerlink" title="第一章 计算机系统概述"></a>第一章 计算机系统概述</h1><hr>
-<h2 id="计算机系统简介"><a href="#计算机系统简介" class="headerlink" title="计算机系统简介"></a>计算机系统简介</h2><hr>
-<h3 id="计算机系统的概念和分类"><a href="#计算机系统的概念和分类" class="headerlink" title="计算机系统的概念和分类"></a>计算机系统的概念和分类</h3><p>计算机系统由<code>硬件</code>和<code>软件</code>两大部分组成。</p>
-<ul>
-<li><p>所谓<code>硬件</code>即指计算机的实体部分，它由看得见摸得着的各种电子元器件、各类光、点、机设备的实物组成，如主机、外设等。</p>
-</li>
-<li><p>所谓<code>软件</code>他是看不见摸不着的，由人们实现编制成具有各类特殊功能的信息组成。通常把这些信息，注入各类程序寄寓于各类媒体中，如RAM、ROM、磁带、磁盘、光盘、甚至纸带等。他们通常被作为计算机的主存或辅存的内容。</p>
-<p>计算机的软件通常可以分为两大类：系统软件和应用软件。</p>
-</li>
-<li><p>系统软件又称为系统程序，主要用来管理整个计算机系统，监视服务，使系统资源得到合理调度，确保高效运行。它包括：标准程序库、语言处理程序（如将汇编语言翻译成机器语言的汇编程序；将高级语言翻译成机器语言的编译程序）、操作系统（如批处理系统、分时系统、实时系统）、服务性程序（如诊断程序、调试程序、连接程序等）、数据库管理系统、网络软件等等。</p>
-</li>
-<li><p>应用软件又称为应用程序，它是用户根据任务需要所编制的各种程序。如科学计算程序，数据处理程序，过程控制程序，事务管理程序等。</p>
-</li>
-</ul>
-<h3 id="计算机的发展"><a href="#计算机的发展" class="headerlink" title="计算机的发展"></a>计算机的发展</h3><hr>
-<h4 id="硬件发展"><a href="#硬件发展" class="headerlink" title="硬件发展"></a>硬件发展</h4><ol>
-<li><strong>电子管和继电器时代（1940年代至1950年代）</strong>：早期的计算机使用电子管和继电器进行运算。这些设备庞大、耗能且不稳定，例如ENIAC就是一个典型的例子。虽然它们能够进行基本的计算，但是由于电子管容易损坏且需要频繁更换，因此效率很低。</li>
-<li><strong>集成电路的出现（1950年代至1960年代）</strong>：集成电路的发明使得电子元件能够集成在一块芯片上，大大提高了计算机的性能和稳定性。这一时期诞生了一些里程碑式的计算机，如IBM System/360。随着集成电路技术的进步，计算机的规模逐渐缩小，成本也逐渐下降。</li>
-<li><strong>个人计算机时代（1970年代至1980年代）</strong>：随着微处理器的发明，个人计算机开始普及。1975年，Altair 8800发布，标志着个人计算机的诞生。1977年，Apple II推出，进一步推动了个人计算机的发展。1981年，IBM发布了第一台IBM PC，开创了个人计算机的标准化时代。</li>
-<li><strong>移动计算和嵌入式系统（1990年代至今）</strong>：随着技术的进步，计算能力逐渐集成到更小、更便携的设备中。1990年代，个人数码助理（PDA）和智能手机开始出现。2007年，苹果公司发布了第一款iPhone，开启了智能手机时代。同时，嵌入式系统的应用范围也在不断扩大，从家用电器到汽车，再到工业自动化。</li>
-</ol>
-<h4 id="摩尔定律"><a href="#摩尔定律" class="headerlink" title="摩尔定律"></a>摩尔定律</h4><p>摩尔定律是一项关于集成电路发展速度的经验观察，由英特尔公司的创始人之一戈登·摩尔（Gordon Moore）在1965年提出。该定律的核心内容是：集成电路上可容纳的晶体管数量，大约每隔18个月会翻一番，或者说其性能每隔18个月翻倍。</p>
-<p>具体来说，摩尔定律可以总结为以下几点要点：</p>
-<ol>
-<li><strong>时间间隔</strong>：摩尔定律所描述的时间间隔为18个月，也有些人将其描述为每两年或每三年，但18个月是最常见的观察周期。</li>
-<li><strong>晶体管数量</strong>：摩尔定律关注的是集成电路上可容纳的晶体管数量。这意味着在相同的芯片面积上，晶体管数量将随时间呈指数级增长。</li>
-<li><strong>性能翻倍</strong>：随着晶体管数量的增加，集成电路的性能也会呈指数级增长，通常以性能翻倍的方式来衡量。</li>
-<li><strong>价格不变</strong>：摩尔定律假设在相同价格范围内，集成电路的晶体管数量会翻倍。这意味着虽然成本在增加，但每个晶体管的成本不会随之增加，从而使得每单位性能的成本越来越低。</li>
-<li><strong>应用范围</strong>：摩尔定律不仅适用于集成电路的晶体管数量，也可以推广到其他方面，如存储容量、传感器像素等。</li>
-</ol>
-<p>摩尔定律的提出和持续验证推动了计算机和信息技术领域的快速发展。它促进了硅谷的兴起，推动了计算机性能的提升，使得计算机应用更加广泛和普及。然而，随着技术的发展逐渐接近物理极限，摩尔定律在未来可能面临挑战，需要寻找新的技术和方法来持续推动计算机技术的进步。</p>
-<h4 id="软件发展"><a href="#软件发展" class="headerlink" title="软件发展"></a>软件发展</h4><ul>
-<li><p>操作系统的演变</p>
-<ul>
-<li>早期操作系统（1950年代至1960年代）：简单的批处理系统和分时操作系统，如IBM的OS/360。</li>
-<li>个人计算机时代（1970年代至1980年代）：微软的DOS（Disk Operating System）成为个人计算机的主流操作系统。1985年，微软推出了Windows 1.0，开启了图形用户界面的时代。</li>
-<li>互联网时代（1990年代至今）：Windows、MacOS和Linux等操作系统不断演进，加入了更多的功能和安全性。同时，移动操作系统如iOS和Android也逐渐崛起。</li>
-</ul>
-</li>
-<li><p>应用软件的发展</p>
-<ul>
-<li>办公软件：如Microsoft Office和Google Docs，使得办公工作更加高效。</li>
-<li>娱乐软件：游戏、多媒体软件和流媒体服务，如Steam、Netflix等，丰富了人们的娱乐生活。</li>
-<li>通讯软件：即时通讯应用（如WhatsApp、WeChat）、社交媒体平台（如Facebook、Twitter），改变了人们之间的沟通方式。</li>
-</ul>
-</li>
-<li><p>编程语言和开发工具</p>
-<ul>
-<li>高级编程语言的发展（如C、Python、Java）使得软件开发更加简单和高效。</li>
-<li>集成开发环境（IDE）的出现，如Visual Studio、Eclipse等，为开发者提供了更好的开发体验和工作流程。</li>
-</ul>
-</li>
-<li><p>人工智能和机器学习</p>
-<ul>
-<li>语音助手：如Apple的Siri、Amazon的Alexa和Google的Assistant，使得人机交互更加自然。</li>
-<li>智能推荐系统：网上购物、音乐和视频平台等的推荐系统利用机器学习算法来个性化推荐商品和内容。</li>
-<li>自动驾驶技术：基于人工智能和机器学习的自动驾驶技术正在逐渐成熟，有望改变交通运输行业。</li>
-</ul>
-</li>
-</ul>
-<h2 id="计算机系统的层次结构"><a href="#计算机系统的层次结构" class="headerlink" title="计算机系统的层次结构"></a>计算机系统的层次结构</h2><hr>
-<h3 id="计算机系统的基本组成"><a href="#计算机系统的基本组成" class="headerlink" title="计算机系统的基本组成"></a>计算机系统的基本组成</h3><h4 id="计算机硬件"><a href="#计算机硬件" class="headerlink" title="计算机硬件"></a>计算机硬件</h4><h5 id="冯·诺伊曼计算机"><a href="#冯·诺伊曼计算机" class="headerlink" title="冯·诺伊曼计算机"></a>冯·诺伊曼计算机</h5><p>冯·诺伊曼计算机是一种基于冯·诺伊曼结构设计的计算机体系结构，是现代计算机的基础模型之一。它由数学家约翰·冯·诺伊曼在二战期间提出，并在1945年发表了《报告书第一部分》（First Draft of a Report on the EDVAC）详细描述了这一概念。</p>
-<p>冯·诺伊曼计算机的主要特点包括：</p>
-<ol>
-<li><strong>存储程序：</strong> 冯·诺伊曼计算机采用存储程序的概念，即程序和数据都存储在同一种内存中，并且以二进制形式表示。这使得程序能够被存储、读取和修改，从而实现了程序的自动执行。</li>
-<li><strong>单一总线结构：</strong> 冯·诺伊曼计算机采用了单一总线结构，将CPU、存储器和输入/输出设备连接在一条总线上，通过总线进行数据和控制信号的传输。</li>
-<li><strong>按顺序执行指令：</strong> 冯·诺伊曼计算机按照存储在内存中的指令序列依次执行，每条指令都包括操作码和操作数，操作码指示执行的操作类型，操作数则指定操作的对象。</li>
-<li><strong>分离存储器和处理器：</strong> 冯·诺伊曼计算机将存储器（内存）和处理器（CPU）分开，通过总线进行数据传输和交换，从而实现了数据和指令的有效分离。</li>
-<li><strong>运算单元和控制单元：</strong> 冯·诺伊曼计算机包含了运算单元（Arithmetic Logic Unit, ALU）和控制单元（Control Unit, CU），ALU负责执行算术和逻辑运算，而CU则负责从存储器中取出指令、解码并执行。</li>
-</ol>
-<p>冯·诺伊曼计算机的提出标志着计算机科学的重要里程碑，它的基本原理被广泛应用于现代计算机体系结构的设计中，包括个人电脑、服务器、超级计算机等各种类型的计算机。</p>
-<h5 id="计算机的功能部件"><a href="#计算机的功能部件" class="headerlink" title="计算机的功能部件"></a>计算机的功能部件</h5><ol>
-<li><strong>存储器</strong>：用于存储数据和程序。包括内存（RAM）和长期存储设备（如硬盘驱动器、固态硬盘），内存用于临时存储程序和数据，长期存储设备则用于长期保存数据和程序。</li>
-<li><strong>运算器</strong>：执行计算机程序中的算术和逻辑运算。它包括算术逻辑单元（ALU），负责执行加减乘除等算术运算，以及逻辑运算，如与、或、非等。</li>
-<li><strong>控制器</strong>：从内存中获取指令，解码指令并控制数据流动。它包括控制单元（CU），负责协调各个部件的操作，确保程序按照指令顺利执行。</li>
-<li><strong>输入设备</strong>：用于输入数据和指令，包括键盘、鼠标、触摸屏、扫描仪和摄像头。这些设备允许用户向计算机提供信息。</li>
-<li><strong>输出设备</strong>：将计算机处理后的数据和结果展示给用户，包括显示器、打印机和音频设备（扬声器、耳机）。这些设备使用户能够获取计算机处理后的信息。</li>
-</ol>
-<p>一般将运算器和控制器继集成到同一芯片上，成为中央处理器（CPU）。CPU和主存储器共同构成主机，而除主机外的其它硬件装置（外存、I/O设备等）统称为外部设备，简称外设。</p>
-<h5 id="计算机软件"><a href="#计算机软件" class="headerlink" title="计算机软件"></a>计算机软件</h5><h6 id="软件的分类"><a href="#软件的分类" class="headerlink" title="软件的分类"></a>软件的分类</h6><p>软件按其功能分类，可分为系统软件和应用软件。</p>
-<h6 id="三个级别的计算机语言"><a href="#三个级别的计算机语言" class="headerlink" title="三个级别的计算机语言"></a>三个级别的计算机语言</h6><p>计算机语言通常可以分为三个级别：机器语言、汇编语言和高级语言。</p>
-<ol>
-<li><strong>机器语言</strong>：<ul>
-<li><strong>定义</strong>：机器语言是计算机能直接理解和执行的语言，由二进制代码（0和1）表示。</li>
-<li><strong>特点</strong>：与计算机硬件紧密相关，每个指令对应一组二进制码，难以阅读和编写，但计算机可以直接执行。</li>
-<li><strong>示例</strong>：例如，对于某个特定计算机体系结构，将某个指令编码为特定的二进制序列，如00110110。</li>
-</ul>
-</li>
-<li><strong>汇编语言</strong>：<ul>
-<li><strong>定义</strong>：汇编语言是机器语言的助记符表示法，使用助记符（如ADD、SUB等）代替二进制码，更易于理解和编写。</li>
-<li><strong>特点</strong>：每个汇编语言指令对应一条机器语言指令，需要通过汇编器将汇编代码转换为机器语言。</li>
-<li><strong>示例</strong>：将ADD指令翻译成对应的机器语言二进制码，如00011010。</li>
-</ul>
-</li>
-<li><strong>高级语言</strong>：<ul>
-<li><strong>定义</strong>：高级语言是更接近人类语言的编程语言，使用类似英语的语法和关键字，更易于理解和编写。</li>
-<li><strong>特点</strong>：与特定硬件无关，需要通过编译器或解释器将高级语言代码转换为机器语言。</li>
-<li><strong>示例</strong>：C、Java、Python等都是高级语言，程序员可以使用这些语言编写复杂的程序，然后通过编译或解释器转换为机器语言。</li>
-</ul>
-</li>
-</ol>
-<p>这三个级别的计算机语言在不同层次上表达程序逻辑，越高级的语言越接近人类思维，编写和理解起来也更为方便，但执行效率可能相对较低；而低级语言则更接近计算机硬件，执行效率高，但编写和理解难度较大。</p>
-<h3 id="计算机硬件的基本结构"><a href="#计算机硬件的基本结构" class="headerlink" title="计算机硬件的基本结构"></a>计算机硬件的基本结构</h3><p>冯·诺伊曼计算机的基本结构包括：</p>
-<ol>
-<li><strong>中央处理单元（CPU）：</strong> 负责执行指令、处理数据和控制计算机的其他部件。</li>
-<li><strong>存储器（Memory）：</strong> 包括内存和外部存储器，用于存储数据和程序指令。</li>
-<li><strong>输入/输出设备（I/O Devices）：</strong> 用于与外部世界进行交互，如键盘、鼠标、显示器、打印机等。</li>
-<li><strong>控制单元（Control Unit）：</strong> 负责控制指令的执行顺序和数据的传输。</li>
-<li><strong>算术逻辑单元（ALU）：</strong> 执行算术运算（如加法、减法）和逻辑运算（如与、或、非）。</li>
-<li><strong>总线（Bus）：</strong> 用于传输数据、指令和控制信号的集合，包括地址总线、数据总线和控制总线。</li>
-</ol>
-<p>这种结构的特点是指令和数据存储在同一存储器中，通过地址寻址来区分；程序和数据以二进制形式存储；指令和数据以相同格式存储在存储器中。</p>
-<h3 id="计算机软件和硬件的关系"><a href="#计算机软件和硬件的关系" class="headerlink" title="计算机软件和硬件的关系"></a>计算机软件和硬件的关系</h3><p>计算机软件和硬件之间存在密切的关系，它们互相依存，共同构成了完整的计算机系统。</p>
-<ol>
-<li><strong>相互依赖</strong>：软件需要硬件的支持才能运行，而硬件则需要软件来控制和操作。没有合适的软件，硬件无法发挥作用；同样，没有硬件支持，软件也无法执行。</li>
-<li><strong>软件控制硬件</strong>：软件通过操作系统和驱动程序来控制硬件的各种功能和操作。例如，操作系统通过驱动程序来管理硬件设备，让它们能够与软件进行交互。</li>
-<li><strong>硬件支持软件</strong>：硬件提供计算和存储等基本功能，为软件的执行提供必要的计算资源和存储空间。不同类型的软件可能需要不同配置的硬件来运行。</li>
-<li><strong>性能和效率</strong>：软件的设计和编写可以充分利用硬件的性能，提高计算机系统的效率和性能。同时，硬件的性能和功能水平也会影响到软件的运行效果和体验。</li>
-</ol>
-<p>总的来说，软件和硬件是相辅相成的，它们共同构成了计算机系统，软件决定了计算机的功能和特性，而硬件提供了软件运行的基础支持。</p>
-<h3 id="计算机系统的工作原理"><a href="#计算机系统的工作原理" class="headerlink" title="计算机系统的工作原理"></a>计算机系统的工作原理</h3><h4 id="源程序得到可执行程序"><a href="#源程序得到可执行程序" class="headerlink" title="源程序得到可执行程序"></a>源程序得到可执行程序</h4><p>计算机将源代码转换为可执行程序的过程称为编译（Compilation）或解释（Interpretation），取决于编程语言和编译器/解释器的使用情况。下面是通常的步骤：</p>
-<ol>
-<li><strong>编写源代码</strong>：程序员使用文本编辑器或集成开发环境（IDE）编写源代码，其中包含程序的逻辑和功能。</li>
-<li><strong>编译或解释</strong>：<ul>
-<li><strong>编译</strong>：对于静态类型语言（如C、C++、Java），源代码需要通过编译器进行编译，生成与特定平台兼容的机器码或字节码。编译器会检查语法错误和类型错误，并将源代码转换为可执行程序。</li>
-<li><strong>解释</strong>：对于动态类型语言（如Python、JavaScript），源代码由解释器逐行解释执行。解释器会将源代码逐行翻译为计算机能理解的指令，并实时执行代码。</li>
-</ul>
-</li>
-<li><strong>链接（可选）</strong>：对于使用多个源文件的程序，编译器还可能进行链接操作，将不同源文件中的代码组合成一个可执行程序。链接器会解析函数调用、全局变量等引用，并将它们连接到对应的定义。</li>
-<li><strong>生成可执行文件</strong>：编译器或解释器将转换后的代码生成可执行文件，其中包含了机器码、字节码或解释器所需的中间代码。</li>
-<li><strong>运行程序</strong>：生成的可执行文件可以在相应的操作系统上运行，用户可以通过命令行或双击图标来启动程序，操作系统将加载可执行文件到内存中，并执行其中的指令。</li>
-</ol>
-<p>这些步骤使得程序员能够将自己编写的源代码转换为计算机可以执行的可执行程序，从而实现程序的功能。</p>
-<h4 id="存储程序的基本思想"><a href="#存储程序的基本思想" class="headerlink" title="存储程序的基本思想"></a>存储程序的基本思想</h4><ol>
-<li><p>存储程序的基本思想是将计算机程序的指令和数据存储在计算机内存中，以便计算机可以按照程序的指令顺序执行操作。这个思想是现代计算机体系结构的核心之一，也是冯·诺伊曼体系结构的基础。</p>
-<p>冯·诺伊曼体系结构的基本思想包括：</p>
-<ol>
-<li><strong>存储器存储程序和数据</strong>：计算机的程序和数据被存储在内存中，程序和数据以二进制形式存储，可以随时读取和写入。</li>
-<li><strong>按顺序执行指令</strong>：计算机按照程序存储器中指令的顺序逐条执行指令，每条指令完成一个特定的操作，如算术运算、逻辑运算、数据传输等。</li>
-<li><strong>指令和数据共享存储器</strong>：程序和数据存储在同一存储器中，指令和数据可以交替存取，这种设计简化了计算机体系结构，提高了程序的灵活性和通用性。</li>
-<li><strong>自动顺序控制</strong>：计算机按照程序存储器中指令的顺序自动执行，不需要人工干预，程序的控制流由指令中的跳转指令和条件分支指令控制。</li>
-<li><strong>存储器地址寻址</strong>：计算机使用地址来访问存储器中的指令和数据，指令中的地址字段指示了下一条要执行的指令在存储器中的位置，数据也通过地址进行读取和写入。</li>
-</ol>
-<p>这些基本思想构成了现代计算机体系结构的基础，使得计算机能够高效地执行各种任务，从简单的算术运算到复杂的图形处理和人工智能任务。</p>
-</li>
-</ol>
-<h3 id="计算机系统的多级层次结构"><a href="#计算机系统的多级层次结构" class="headerlink" title="计算机系统的多级层次结构"></a>计算机系统的多级层次结构</h3><p>计算机系统的多级层次结构可以从不同的角度进行描述，包括硬件和软件两个方面：</p>
-<ol>
-<li><strong>硬件层次结构</strong>：<ul>
-<li><strong>物理层</strong>：包括处理器、内存、输入/输出设备、总线等实际的硬件组件。</li>
-<li><strong>逻辑层</strong>：定义了硬件如何工作和交互，包括指令集架构（ISA）和处理器微架构等。</li>
-<li><strong>组成层</strong>：由逻辑门、寄存器、ALU（算术逻辑单元）等组成，实现了基本的逻辑和算术操作。</li>
-<li><strong>微体系结构层</strong>：定义了处理器的内部结构和组织，包括流水线、缓存层次结构等。</li>
-<li><strong>电子层</strong>：描述了硬件的电子元件和电路结构，如晶体管、电容器等。</li>
-</ul>
-</li>
-<li><strong>软件层次结构</strong>：<ul>
-<li><strong>应用层</strong>：包括用户直接使用的应用程序，如浏览器、文字处理软件等。</li>
-<li><strong>操作系统层</strong>：管理计算机硬件资源和提供服务给应用程序，如Windows、macOS、Linux等操作系统。</li>
-<li><strong>中间件层</strong>：提供在不同软件应用之间进行通信和交互的平台，如数据库管理系统（DBMS）、Web服务器等。</li>
-<li><strong>编程语言层</strong>：定义了程序员编写软件的语法和语义，包括高级编程语言（如Python、Java）和低级编程语言（如汇编语言）。</li>
-<li><strong>体系结构层</strong>：提供了软件和硬件之间的接口和抽象，使得软件可以跨平台运行，如虚拟机、编译器等。</li>
-</ul>
-</li>
-</ol>
-<p>这些层次结构相互交织，共同构成了计算机系统的复杂性。硬件层次提供了计算机系统的基本功能和性能，而软件层次则定义了如何利用硬件资源来实现各种应用和服务</p>
-<h3 id="计算机系统的工作原理-1"><a href="#计算机系统的工作原理-1" class="headerlink" title="计算机系统的工作原理"></a>计算机系统的工作原理</h3><p>计算机系统的工作原理可以简单概括为：操作系统管理硬件资源，应用程序通过操作系统与硬件交互，CPU执行指令并处理数据，从而实现各种功能和任务。整个过程是一个不断循环的过程，用户输入数据和指令，计算机处理这些数据和指令，并输出处理结果，然后等待下一轮输入。</p>
-<ol>
-<li><p><strong>主存储器</strong></p>
-<p>​        主存储器（简称主存或内存）包括了存储体M、各种逻辑部件以及控制电路等。存储体由许多存储单元组成，每个存储单元又包含若干个存储元件；每个存储元件只能存放一位二进制代码（0或者1）。这样，每个存储单元可以存储遗传二进制代码，这就被称为一个“存储字”；存储字的二进制位数称为“存储字长”。</p>
-<p>​        主存中的每个存储单元有一个唯一的编号，叫做存储单元的“地址”（Address）。主存的工作方式就是按照存储单元的地址，来实现对存储字各位的存（写入）取（读出）。这种存储方式叫做“按地址访问存储器”。</p>
-<p>​        为了实现按地址访问的方式，主存中还必须配置两个寄存器：<strong>MAR</strong>和<strong>MDR</strong></p>
-<ul>
-<li><p><code>MAR</code>（存储器地址寄存器）：用来存放想要访问的存储单元的地址，它的位数决定了能访问的存储单元的最大个数。</p>
-</li>
-<li><p><code>MDR</code>（存储器数据寄存器）：用来存放从存储单元中取出，或者准备向存储体单元存入的数据，他的位数和存储字相等。</p>
-<p>​    当然，如果想要完整的实现一个存储数据的操作，还需要CPU给主存加上各种控制信号，比如读命令、写命令以及地址编码驱动信号等。随着硬件技术的发展，主存现在都是统一制作的大规模集成电路芯片，所以一般都将MAR和MDR集成在CPU芯片中。</p>
-</li>
-</ul>
-</li>
-<li><p><strong>运算器</strong></p>
-<p>运算器包括了一个算数逻辑单元（ALU）和最少三个寄存器。</p>
-<ul>
-<li>ACC：累加器</li>
-<li>MQ：乘商寄存器</li>
-<li>X：操作数寄存器</li>
-</ul>
-<p>这三个寄存器在完成不同的算数运算时，所存放的操作数也各不相同。</p>
-<p>不同机器的运算器结构也有所不同，有的机器用MDR取代X寄存器。</p>
-</li>
-<li><p><strong>控制器</strong></p>
-<p>控制器由控制单元（CU）和程序计数器（PC）、指令寄存器（IR）组成。</p>
-<p>PC：程序计数器，用来存放当前将要执行指令的地址。他与主存的MAR之间有一条直接通路，且具有自动加1的功能，也就时可以自动形成下一条指令的地址。</p>
-<p>IR：指令寄存器，用来存放当前的指令。IR的内容来自主存的MDR，包含了操作码和地址码。IR中的操作码OP（IR）会送至CU，可以记作OP（IR）-&gt;CU，用来分析指令；而地址码Ad(IR)作为操作数的地址送至储存器的MAR，可以记作Ad（IR）-&gt;MAR。</p>
-<p>CU是控制器的核心组件，用来分析当前指令所需完成的操作，并发出各种位操作命令序列，从而控制所有被控对象。控制器是计算机的神经中枢，由他指挥各部件自动协调地工作；完成一条指令操作，需要取指、分析和执行三个阶段。</p>
-</li>
-<li><p><strong>I/O</strong></p>
-<p>I/O系统包括各种输入输出设备及其响应的接口。每一种I/O设备都由I/O接口与主机联系，他接收CU发出的各种控制命令，并完成相应的操作。</p>
-</li>
-</ol>
-<h2 id="计算机性能指标"><a href="#计算机性能指标" class="headerlink" title="计算机性能指标"></a>计算机性能指标</h2><hr>
-<p>衡量一台计算机的性能室友多项技术指标综合确定的，既包含硬件的各类性能，又包括软件的各种功能。</p>
-<h3 id="主要性能指标"><a href="#主要性能指标" class="headerlink" title="主要性能指标"></a>主要性能指标</h3><ol>
-<li><p><strong>机器字长</strong></p>
-<p>​        机器字长，是指CPU一次能处理数据的位数，也就是CPU内部用于整数运算的数据通路的宽度。字长通常就等于CPU的通用寄存器宽度，也就是CPU内用于整数运算的运算的运算器的位数，它反映了计算机处理信息的能力。我们平常所说“一台16位或32位或64位的机器”，这里的16，32，64就是指字长。</p>
-<p>​        字长越长，数的表示范围也越大，精度也越高。机器的字长也会影响机器的运算速度。倘若CPU字长较短，又要运算位数较多的数据，那么需要经过两次或多次的运算才能完成，这样势必影响征集的运行速度。当然，机器字长对于硬件的造价也有较大的影响。他将直接影响加法器（或ALU）、数据总线以及存储字长的位数。</p>
-<ul>
-<li><p>指令字长：一条指令中包含的二进制代码的位数。</p>
-</li>
-<li><p>存储字长：一个存储单元中存储的二进制代码的长度。</p>
-<p>​    指令字长和存储字长，都必须是字节（byte）的整数倍。指令字长一般取存储字长的整数倍：如果指令字长等于存储字长的2倍，那么取一条指令就需要2个机器周期；如果指令字长等于存储字长，那么取指周期就等于机器周期。</p>
-</li>
-</ul>
-</li>
-<li><p><strong>数据通路带宽</strong></p>
-<p>​        数据通路带宽，是指数据总线一次所能并行传送信息的位数，他关系到数据的传送能力。这里所说的数据通路带宽是指外部数据总线的宽度，它与CPU内部的数据总线宽度（机器字长）可能不同。</p>
-</li>
-<li><p><strong>存储容量</strong></p>
-<p>​        存储器的容量，包括主容量和辅存容量。我们一般主要关心主存容量。</p>
-<p>​        主存容量是指主存中所能存储信息（二进制代码）的最大容量，通常以字节数来衡量。</p>
-<p>​                存储容量 = 存储单元个数 X 存储字长</p>
-<p>​        在主存储器中，MAR的位数反应了存储单元的个数，MDR的位数则反应了存储字的长度。例如，MAR为16位，表示2^16^ = 65536，也就是说对应的存储体内有65536个存储单元（一般称为64K内存，1K=1024）；而如果MDR为32位，那么主存的存储容量为2^16^ X 32 = 2^21^ = 2M位 （1M = 2^20^)。</p>
-<p>​        现代计算机中常以字节的个数来描述容量的大小，一个字节 （Byte）被定义为8位二进制代码。所以上述存储容量是2M位 （bit），也可以用2^18^字节 （Byte，简写为B）表示，记作2^18^B或256KB。</p>
-<p>​        同理，辅存容量也可以用字节数来表示，例如，某机辅存（如硬盘）容量为128GB （1G = 1KM = 2^30^）。</p>
-</li>
-<li><p><strong>运算速度</strong></p>
-<p>​        计算机的运算速度与许多因素有关，如机器的主频、CPU的结构、执行什么样的操作、主存本身的速度（主存速度快，取指、取数就快）等等都有关。</p>
-</li>
-</ol>
-<h3 id="专业术语解释"><a href="#专业术语解释" class="headerlink" title="专业术语解释"></a>专业术语解释</h3><p><strong>吞吐量</strong>：系统在单位时间内处理请求的数量，主要取决于主存的存取周期。</p>
-<p><strong>响应时间</strong>：从用户向计算机发送一个请求，到系统对该请求做出响应并获得所需结果的时间。通常包括CPU时间（计算机执行程序的时间）和等待时间（用于磁盘访问、存储器访问、I/O操作等的时间）。</p>
-<p><strong>主频（CPU的时钟频率）</strong>：机器内部主时钟的频率，他是衡量机器速度的重要参数。对统一型号的计算机，主频越高，完成指令的一个步骤所用的时间越短，执行指令的速度越快。通常以赫兹（Hz）为单位。</p>
-<p><strong>CPU时钟周期</strong>：节拍脉冲的宽度或周期，也就是主频的倒数，他是CPU中最小的时间单位。</p>
-<p>​            <code>CPU时钟周期 = 1/主频</code></p>
-<p><strong>CPI</strong>：执行一条指令所需的时钟周期数。对一个程序或一台机器来说，CPI指的是该程序或该机器指令集中所有指令执行所需要的平均时钟周期数。</p>
-<p><strong>CPU执行时间</strong>：运行一个程序所花费的时间。</p>
-<p>​            <code>CPU执行时间 = （指令数 x CPI ) / 主频</code></p>
-<p>对于同一个程序，CPU的执行时间就代表了CPU的性能，它主要取决于三个要素：主频、CPI和指令数。这三者是相互制约的。不同的机器可以有不同的指令集，更改指令集可以让程序的指令数更少，但CPI可能就会增大；同时可能引起CPU结构的调整，从而造成主频的降低。</p>
-]]></content>
-      <tags>
-        <tag>computer</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>博客写作的必会技能--markdown</title>
-    <url>/2024/04/18/Typora%E6%95%99%E7%A8%8B/</url>
-    <content><![CDATA[<h1 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h1><hr>
-<p>作为一个博客小白，我认为在正式开始创作的时候，系统的学习一下<code>markdown</code>软件之一的<code>Typora</code>是必要的。</p>
-<p>以下是我结合相关资料整理出的一部分教程。</p>
-<p>首先在开始之前，为了避免大脑突然宕机点了关闭按钮而忘记保存已经写好的文档，我强烈建议先打开自动保存功能！！！</p>
-<h1 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h1><hr>
-<blockquote>
-<p> 语法： #(一级标题) ##(二级标题) ###(三级标题)….</p>
-<p>代码：</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="section">#  这是一个一级标题</span></span><br><span class="line"><span class="section">## 这是一个二级标题</span></span><br></pre></td></tr></table></figure>
-<p>快捷键：</p>
-<ul>
-<li>Ctrl+数字1~6 可以快速将选中的文本调成对应级别的标题</li>
-<li>Ctrl+0 可以快速将选中的文本调成普通文本</li>
-<li>Ctrl+加号/减号 可以对标题级别进行加减</li>
-</ul>
-</blockquote>
-<h1 id="段落"><a href="#段落" class="headerlink" title="段落"></a>段落</h1><hr>
-<h2 id="换行"><a href="#换行" class="headerlink" title="换行"></a>换行</h2><blockquote>
-<p>代码：</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">这是一个段落</span><br><span class="line">这是一个段落</span><br></pre></td></tr></table></figure>
-<p>效果：</p>
-<p>这是第一行</p>
-<p>这是第二行</p>
-<p>这是一个段落<br>这是一个段落</p>
-<p>说明：</p>
-<p>回车换行的距离大一些，具体可参考效果中的演示</p>
-<p>想要段落的距离小一些，可以使用 shift+回车 组合键</p>
-</blockquote>
-<h2 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h2><blockquote>
-<p>语法： —-或者<em>*</em>  +回车</p>
-<p>代码：</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">---或者***</span><br></pre></td></tr></table></figure>
-<p>效果</p>
-<hr>
-</blockquote>
-<h1 id="文字显示"><a href="#文字显示" class="headerlink" title="文字显示"></a>文字显示</h1><hr>
-<h2 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h2><blockquote>
-<p>语法：</p>
-<ul>
-<li>粗体：用一对双星号包裹</li>
-<li>删除线：用一堆双飘号包裹 </li>
-<li>下划线： 用一对u标签包裹</li>
-<li>斜体：用一对单星号包裹</li>
-<li>高亮：用一对双等号包裹</li>
-</ul>
-<p>代码：</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="strong">**这是粗体**</span></span><br><span class="line">~~这是删除线~~</span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">u</span>&gt;</span></span>这是下划线<span class="language-xml"><span class="tag">&lt;/<span class="name">u</span>&gt;</span></span></span><br><span class="line"><span class="emphasis">*这是斜体*</span></span><br><span class="line">==这是高亮==</span><br></pre></td></tr></table></figure>
-<p>效果：</p>
-<p><strong>这是粗体</strong><br><del>这是删除线</del><br><u>这是下划线</u><br><em>这是斜体</em><br>==这是高亮==</p>
-<p>说明：</p>
-<p>高亮需要在偏好设置中开启，但是似乎在网页中并没有显示<br>如果需要输入“ * ”需要在其前面输入 / 来完成转义</p>
-<p>快捷键：</p>
-<ul>
-<li>加粗 ： Ctrl+B</li>
-<li>删除线：Shift+Alt+5</li>
-<li>下划线： Ctrl+U</li>
-<li>斜体： Ctrl+L</li>
-</ul>
-</blockquote>
-<h2 id="上下标"><a href="#上下标" class="headerlink" title="上下标"></a>上下标</h2><blockquote>
-<p>代码：</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">x^3^</span><br><span class="line">H~2~O</span><br></pre></td></tr></table></figure>
-<p>效果：</p>
-<p>x^3^<br>H~2~O</p>
-</blockquote>
-<h1 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h1><hr>
-<h2 id="无序列表"><a href="#无序列表" class="headerlink" title="无序列表"></a>无序列表</h2><blockquote>
-<p>代码：</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="emphasis">*/-/+ +空格</span></span><br></pre></td></tr></table></figure>
-<p>效果：</p>
-<p>1.只有同一级别：</p>
-<ul>
-<li>联想</li>
-<li>戴尔</li>
-<li>惠普</li>
-<li>华硕 </li>
-</ul>
-<p>2.子集类：</p>
-<ul>
-<li>华硕<ul>
-<li>天选</li>
-<li>ROG</li>
-</ul>
-</li>
-<li>戴尔<ul>
-<li>游侠</li>
-<li>外星人</li>
-</ul>
-</li>
-</ul>
-<p>快捷键 ： Ctrl+Shift+]</p>
-<p>说明：</p>
-<p>可以连续按两次回车退出当前层级列表<br>也可以按Tab键进行下一个层级的编辑</p>
-</blockquote>
-<h2 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h2><blockquote>
-<p>代码：</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">数字+.+空格</span><br></pre></td></tr></table></figure>
-<p>效果：</p>
-<ol>
-<li><p>第一个标题</p>
-</li>
-<li><p>第二个标题</p>
-</li>
-<li><p>第三个标题</p>
-<p>子内容1</p>
-<p>子内容2</p>
-</li>
-<li><p>第四个标题</p>
-</li>
-</ol>
-<p>快捷键： Ctrl+Shift+[</p>
-</blockquote>
-<h2 id="任务列表"><a href="#任务列表" class="headerlink" title="任务列表"></a>任务列表</h2><blockquote>
-<p>代码：</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="bullet">-</span> [] 玩游戏</span><br><span class="line"><span class="bullet">-</span> [] 上修罗</span><br></pre></td></tr></table></figure>
-<p>效果：</p>
-<ul>
-<li>[x] 玩游戏</li>
-<li>[ ] 上修罗 </li>
-</ul>
-</blockquote>
-<h1 id="区块显示"><a href="#区块显示" class="headerlink" title="区块显示"></a>区块显示</h1><blockquote>
-<p>代码：</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&gt;&gt;+空格</span><br></pre></td></tr></table></figure>
-<p>效果：</p>
-<blockquote>
-<p>这是最外层区块</p>
-<blockquote>
-<p>这是内层区块</p>
-</blockquote>
-</blockquote>
-</blockquote>
-<h1 id="代码显示"><a href="#代码显示" class="headerlink" title="代码显示"></a>代码显示</h1><h2 id="行内代码"><a href="#行内代码" class="headerlink" title="行内代码"></a>行内代码</h2><blockquote>
-<p>代码：</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="code">`int a = 10`</span></span><br></pre></td></tr></table></figure>
-<p>效果：<br><code>int a = 10</code></p>
-<p>快捷键：Ctrl+Shift+`</p>
-</blockquote>
-<h2 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h2><blockquote>
-<p>效果：</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">这是一个代码块</span><br></pre></td></tr></table></figure>
-<p>快捷键：Ctrl+Shift+K</p>
-</blockquote>
-<h1 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h1><blockquote>
-<p>代码：</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">https://csmyc.github.io</span><br><span class="line">[<span class="string">我的博客</span>](<span class="link">https://csmyc.github.io</span>)</span><br></pre></td></tr></table></figure>
-<p>效果：<br><a href="https://csmyc.github.io">https://csmyc.github.io</a><br><a href="https://csmyc.github.io">我的博客</a></p>
-<p>快捷键：Ctrl+K</p>
-</blockquote>
-<h1 id="脚注"><a href="#脚注" class="headerlink" title="脚注"></a>脚注</h1><blockquote>
-<p>说明：对文本进行解释说明</p>
-<p>代码：</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">[^文本]</span><br><span class="line">[^文本]：解释说明</span><br></pre></td></tr></table></figure>
-<p>效果：<br>idea<sup><a href="#fn_1" id="reffn_1">1</a></sup>是一个非常好用的IDE</p>
-<p><sup><a href="#fn_1" id="reffn_1">1</a></sup>:IDEA 全称 IntelliJ IDEA，是<a href="https://baike.baidu.com/item/java/85979?fromModule=lemma_inlink">java</a><a href="https://baike.baidu.com/item/编程语言/9845131?fromModule=lemma_inlink">编程语言</a>的<a href="https://baike.baidu.com/item/集成开发环境/298524?fromModule=lemma_inlink">集成开发环境</a>。</p>
-</blockquote>
-<h1 id="图片插入"><a href="#图片插入" class="headerlink" title="图片插入"></a>图片插入</h1><blockquote>
-<p>代码：</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">![<span class="string">不显示的文字</span>](<span class="link">图片路径 &quot;图片标题&quot;</span>)</span><br></pre></td></tr></table></figure>
-<p>效果：</p>
-<p><img src="/images/top.png" alt="我的主页图片"></p>
-</blockquote>
-<h1 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h1><blockquote>
-<p>代码：</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">| 1 | 2 | 3 |</span><br></pre></td></tr></table></figure>
-<p>效果：</p>
-<div class="table-container">
-<table>
-<thead>
-<tr>
-<th>1</th>
-<th>2</th>
-<th>3</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>快捷键 ： Ctrl+T</p>
-</blockquote>
-<h1 id="流程图"><a href="#流程图" class="headerlink" title="流程图"></a>流程图</h1><blockquote>
-<p>代码 ：</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="code">```mermaid</span></span><br><span class="line"><span class="code">graph LR</span></span><br><span class="line"><span class="code">A[方形]==&gt;B(圆角)</span></span><br><span class="line"><span class="code">B==&gt;C&#123;条件a&#125;</span></span><br><span class="line"><span class="code">B--&gt;|a=1|D[结果1]</span></span><br><span class="line"><span class="code">C--&gt;|a=2|E[结果2]</span></span><br><span class="line"><span class="code">F[横向流程图]</span></span><br><span class="line"><span class="code">```</span></span><br></pre></td></tr></table></figure>
-<p>说明：</p>
-<p>hexo 默认不支持流程图，所以我就不在这里展示流程图的效果了，主要还是懒</p>
-</blockquote>
-<h3 id=""><a href="#" class="headerlink" title=" "></a> </h3>]]></content>
-      <tags>
-        <tag>markdown</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>硅谷甄选</title>
-    <url>/2024/05/08/%E7%A1%85%E8%B0%B7%E7%94%84%E9%80%89/</url>
-    <content><![CDATA[<h1 id="Vue3组件通信方式"><a href="#Vue3组件通信方式" class="headerlink" title="Vue3组件通信方式"></a>Vue3组件通信方式</h1><h2 id="vue2组件通信方式举例"><a href="#vue2组件通信方式举例" class="headerlink" title="vue2组件通信方式举例"></a>vue2组件通信方式举例</h2><ul>
-<li>props：可以实现父子组件、子父组件、甚至兄弟组件通信</li>
-<li>自定义事件：可以实现任意组件通信</li>
-<li>全局事件总价$bus：可以时间任意组件通信</li>
-<li>pubsub：发布订阅模式实现任意组件通信</li>
-<li>vuex：集中式管理容器，实现任意组件通信</li>
-<li>ref：父组件获取子组件示例VC，获取子组件的响应式数据以及方法</li>
-<li>slot：插槽（默认插槽、具名插槽、作用域插槽）实现父子组件通信……</li>
-</ul>
-<h2 id="props"><a href="#props" class="headerlink" title="props"></a>props</h2><p>props可以实现父子组件通信,在vue3中我们可以通过<code>defineProps</code>获取父组件传递的数据。且在组件内部不需要引入<code>defineProps</code>方法可以直接使用！</p>
-<p><strong>父组件给子组件传递数据</strong></p>
-<figure class="highlight typescript"><table><tr><td class="code"><pre><span class="line">&lt;<span class="title class_">Child</span> info=<span class="string">&quot;我爱祖国&quot;</span> :money=<span class="string">&quot;money&quot;</span>&gt;&lt;/<span class="title class_">Child</span>&gt;</span><br></pre></td></tr></table></figure>
-<p><strong>子组件获取父组件传递数据:方式1</strong></p>
-<figure class="highlight typescript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> props = <span class="title function_">defineProps</span>(&#123;</span><br><span class="line">  <span class="attr">info</span>:&#123;</span><br><span class="line">   <span class="attr">type</span>:<span class="title class_">String</span>,<span class="comment">//接受的数据类型</span></span><br><span class="line">   <span class="attr">default</span>:<span class="string">&#x27;默认参数&#x27;</span>,<span class="comment">//接受默认数据</span></span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="attr">money</span>:&#123;</span><br><span class="line">   <span class="attr">type</span>:<span class="title class_">Number</span>,</span><br><span class="line">   <span class="attr">default</span>:<span class="number">0</span></span><br><span class="line">&#125;&#125;)</span><br></pre></td></tr></table></figure>
-<p><strong>子组件获取父组件传递数据:方式2</strong></p>
-<figure class="highlight typescript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> props = <span class="title function_">defineProps</span>([<span class="string">&quot;info&quot;</span>,<span class="string">&#x27;money&#x27;</span>]);</span><br></pre></td></tr></table></figure>
-<p>子组件获取到props数据就可以在模板中使用了,但是切记props是只读的(只能读取，不能修改)</p>
-<h2 id="自定义事件"><a href="#自定义事件" class="headerlink" title="自定义事件"></a>自定义事件</h2><hr>
-<p>在<code>vue</code>框架中事件分为两种:</p>
-<ol>
-<li>原生的DOM事件</li>
-<li>自定义事件</li>
-</ol>
-<p>原生DOM事件可以让用户与网页进行交互，比如click、dbclick、change、mouseenter、mouseleave….</p>
-<p>自定义事件可以实现子组件给父组件传递数据</p>
-<h3 id="原生DOM事件"><a href="#原生DOM事件" class="headerlink" title="原生DOM事件"></a>原生DOM事件</h3><p>代码如下:</p>
-<figure class="highlight typescript"><table><tr><td class="code"><pre><span class="line">&lt;pre <span class="meta">@click</span>=<span class="string">&quot;handler&quot;</span>&gt;</span><br><span class="line">     我是祖国的老花骨朵</span><br><span class="line">&lt;/pre&gt;</span><br></pre></td></tr></table></figure>
-<p>当前代码级给pre标签绑定原生DOM事件点击事件,默认会给事件回调注入event事件对象。当然点击事件想注入多个参数可以按照下图操作。但是切记注入的事件对象务必叫做$event.</p>
-<figure class="highlight typescript"><table><tr><td class="code"><pre><span class="line">&lt;div <span class="meta">@click</span>=<span class="string">&quot;handler1(1,2,3,$event)&quot;</span>&gt;我要传递多个参数&lt;/div&gt;</span><br></pre></td></tr></table></figure>
-<p>在vue3框架<code>click</code>、<code>dbclick</code>、<code>change</code>(这类原生DOM事件),不管是在标签、自定义标签上(组件标签)都是原生DOM事件。</p>
-<p><strong><!--vue2中却不是这样的,在vue2中组件标签需要通过native修饰符才能变为原生DOM事件--></strong></p>
-<h3 id="自定义事件-1"><a href="#自定义事件-1" class="headerlink" title="自定义事件"></a>自定义事件</h3><p>自定义事件可以实现子组件给父组件传递数据.在项目中是比较常用的。</p>
-<p>比如在父组件内部给子组件(Event2)绑定一个自定义事件</p>
-<figure class="highlight typescript"><table><tr><td class="code"><pre><span class="line">&lt;<span class="title class_">Event2</span>  <span class="meta">@xxx</span>=<span class="string">&quot;handler3&quot;</span>&gt;&lt;/<span class="title class_">Event2</span>&gt;</span><br></pre></td></tr></table></figure>
-<p>在Event2子组件内部触发这个自定义事件</p>
-<figure class="highlight typescript"><table><tr><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">  <span class="language-xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;<span class="name">h1</span>&gt;</span>我是子组件2<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;<span class="name">button</span> @<span class="attr">click</span>=<span class="string">&quot;handler&quot;</span>&gt;</span>点击我触发xxx自定义事件<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line">&lt;/template&gt;</span><br><span class="line"></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">script</span> <span class="attr">setup</span> <span class="attr">lang</span>=<span class="string">&quot;ts&quot;</span>&gt;</span><span class="language-javascript"></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"><span class="keyword">let</span> $emit = <span class="title function_">defineEmits</span>([<span class="string">&quot;xxx&quot;</span>]);</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"><span class="keyword">const</span> <span class="title function_">handler</span> = (<span class="params"></span>) =&gt; &#123;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">  $emit(<span class="string">&quot;xxx&quot;</span>, <span class="string">&quot;法拉利&quot;</span>, <span class="string">&quot;茅台&quot;</span>);</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">&#125;;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">style</span> <span class="attr">scoped</span>&gt;</span></span></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
-<p>我们会发现在script标签内部，使用了<code>defineEmits</code>方法，此方法是<code>vue3</code>提供的方法,不需要引入直接使用。<code>defineEmits</code>方法执行，传递一个数组，数组元素即为将来组件需要触发的自定义事件类型，此方执行会返回一个$emit方法用于触发自定义事件。</p>
-<p>当点击按钮的时候，事件回调内部调用<code>$emit</code>方法去触发自定义事件,第一个参数为触发事件类型，第二个、三个、N个参数即为传递给父组件的数据。</p>
-<p>需要注意的是:代码如下</p>
-<figure class="highlight typescript"><table><tr><td class="code"><pre><span class="line">&lt;<span class="title class_">Event2</span>  <span class="meta">@xxx</span>=<span class="string">&quot;handler3&quot;</span> <span class="meta">@click</span>=<span class="string">&quot;handler&quot;</span>&gt;&lt;/<span class="title class_">Event2</span>&gt;</span><br></pre></td></tr></table></figure>
-<p>正常说组件标签书写@click应该为原生DOM事件,但是如果子组件内部通过<code>defineEmits</code>定义就变为自定义事件了</p>
-<figure class="highlight typescript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> $emit = <span class="title function_">defineEmits</span>([<span class="string">&quot;xxx&quot;</span>,<span class="string">&#x27;click&#x27;</span>]);</span><br></pre></td></tr></table></figure>
-<h2 id="全局事件总线"><a href="#全局事件总线" class="headerlink" title="全局事件总线"></a>全局事件总线</h2><hr>
-<p>全局事件总线可以实现任意组件通信，在vue2中可以根据VM与VC关系推出全局事件总线。</p>
-<p>但是在vue3中没有Vue构造函数，也就没有Vue.prototype.以及组合式API写法没有this，</p>
-<p>那么在Vue3想实现全局事件的总线功能就有点不现实啦，如果想在Vue3中使用全局事件总线功能</p>
-<p>可以使用插件mitt实现。</p>
-<p><strong>mitt:官网地址:<a href="https://www.npmjs.com/package/mitt">https://www.npmjs.com/package/mitt</a></strong></p>
-<h3 id="v-model"><a href="#v-model" class="headerlink" title="v-model"></a>v-model</h3><p>v-model指令可是收集表单数据(数据双向绑定)，除此之外它也可以实现父子组件数据同步。</p>
-<p>而v-model实指利用props[modelValue]与自定义事件[update:modelValue]实现的。</p>
-<p>下方代码:相当于给组件Child传递一个props(modelValue)与绑定一个自定义事件update:modelValue</p>
-<p>实现父子组件数据同步</p>
-<figure class="highlight typescript"><table><tr><td class="code"><pre><span class="line">&lt;<span class="title class_">Child</span> v-model=<span class="string">&quot;msg&quot;</span>&gt;&lt;/<span class="title class_">Child</span>&gt;</span><br></pre></td></tr></table></figure>
-<p>在vue3中一个组件可以通过使用多个v-model,让父子组件多个数据同步,下方代码相当于给组件Child传递两个props分别是pageNo与pageSize，以及绑定两个自定义事件update:pageNo与update:pageSize实现父子数据同步</p>
-<figure class="highlight typescript"><table><tr><td class="code"><pre><span class="line">&lt;<span class="title class_">Child</span> v-<span class="attr">model</span>:pageNo=<span class="string">&quot;msg&quot;</span> v-<span class="attr">model</span>:pageSize=<span class="string">&quot;msg1&quot;</span>&gt;&lt;/<span class="title class_">Child</span>&gt;</span><br></pre></td></tr></table></figure>
-<h3 id="useAttrs"><a href="#useAttrs" class="headerlink" title="useAttrs"></a>useAttrs</h3><p>在Vue3中可以利用useAttrs方法获取组件的属性与事件(包含:原生DOM事件或者自定义事件),次函数功能类似于Vue2框架中$attrs属性与$listeners方法。</p>
-<p>比如:在父组件内部使用一个子组件my-button</p>
-<figure class="highlight typescript"><table><tr><td class="code"><pre><span class="line">&lt;my-button <span class="keyword">type</span>=<span class="string">&quot;success&quot;</span> size=<span class="string">&quot;small&quot;</span> title=<span class="string">&#x27;标题&#x27;</span> <span class="meta">@click</span>=<span class="string">&quot;handler&quot;</span>&gt;&lt;/my-button&gt;</span><br></pre></td></tr></table></figure>
-<p>子组件内部可以通过useAttrs方法获取组件属性与事件.因此你也发现了，它类似于props,可以接受父组件传递过来的属性与属性值。需要注意如果defineProps接受了某一个属性，useAttrs方法返回的对象身上就没有相应属性与属性值。</p>
-<figure class="highlight typescript"><table><tr><td class="code"><pre><span class="line">&lt;script setup lang=<span class="string">&quot;ts&quot;</span>&gt;</span><br><span class="line"><span class="keyword">import</span> &#123;useAttrs&#125; <span class="keyword">from</span> <span class="string">&#x27;vue&#x27;</span>;</span><br><span class="line"><span class="keyword">let</span> $attrs = <span class="title function_">useAttrs</span>();</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
-<h2 id="ref与-parent"><a href="#ref与-parent" class="headerlink" title="ref与$parent"></a>ref与$parent</h2><hr>
-<p>ref,提及到ref可能会想到它可以获取元素的DOM或者获取子组件实例的VC。既然可以在父组件内部通过ref获取子组件实例VC，那么子组件内部的方法与响应式数据父组件可以使用的。</p>
-<p>比如:在父组件挂载完毕获取组件实例</p>
-<p>父组件内部代码:</p>
-<figure class="highlight typescript"><table><tr><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">  <span class="language-xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;<span class="name">h1</span>&gt;</span>ref与$parent<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;<span class="name">Son</span> <span class="attr">ref</span>=<span class="string">&quot;son&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">Son</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line">&lt;/template&gt;</span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">script</span> <span class="attr">setup</span> <span class="attr">lang</span>=<span class="string">&quot;ts&quot;</span>&gt;</span><span class="language-javascript"></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"><span class="keyword">import</span> <span class="title class_">Son</span> <span class="keyword">from</span> <span class="string">&quot;./Son.vue&quot;</span>;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"><span class="keyword">import</span> &#123; onMounted, ref &#125; <span class="keyword">from</span> <span class="string">&quot;vue&quot;</span>;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"><span class="keyword">const</span> son = <span class="title function_">ref</span>();</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"><span class="title function_">onMounted</span>(<span class="function">() =&gt;</span> &#123;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">  <span class="variable language_">console</span>.<span class="title function_">log</span>(son.<span class="property">value</span>);</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">&#125;);</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
-<p>但是需要注意，如果想让父组件获取子组件的数据或者方法需要通过defineExpose对外暴露,因为vue3中组件内部的数据对外“关闭的”，外部不能访问</p>
-<figure class="highlight typescript"><table><tr><td class="code"><pre><span class="line">&lt;script setup lang=<span class="string">&quot;ts&quot;</span>&gt;</span><br><span class="line"><span class="keyword">import</span> &#123; ref &#125; <span class="keyword">from</span> <span class="string">&quot;vue&quot;</span>;</span><br><span class="line"><span class="comment">//数据</span></span><br><span class="line"><span class="keyword">let</span> money = <span class="title function_">ref</span>(<span class="number">1000</span>);</span><br><span class="line"><span class="comment">//方法</span></span><br><span class="line"><span class="keyword">const</span> <span class="title function_">handler</span> = (<span class="params"></span>)=&gt;&#123;</span><br><span class="line">&#125;</span><br><span class="line"><span class="title function_">defineExpose</span>(&#123;</span><br><span class="line">  money,</span><br><span class="line">   handler</span><br><span class="line">&#125;)</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
-<p>$parent可以获取某一个组件的父组件实例VC,因此可以使用父组件内部的数据与方法。必须子组件内部拥有一个按钮点击时候获取父组件实例，当然父组件的数据与方法需要通过defineExpose方法对外暴露</p>
-<figure class="highlight typescript"><table><tr><td class="code"><pre><span class="line">&lt;button <span class="meta">@click</span>=<span class="string">&quot;handler($parent)&quot;</span>&gt;点击我获取父组件实例&lt;/button&gt;</span><br></pre></td></tr></table></figure>
-<h2 id="provide与inject"><a href="#provide与inject" class="headerlink" title="provide与inject"></a>provide与inject</h2><hr>
-<p><strong>provide[提供]</strong></p>
-<p><strong>inject[注入]</strong></p>
-<p>vue3提供两个方法provide与inject,可以实现隔辈组件传递参数</p>
-<p>组件组件提供数据:</p>
-<p>provide方法用于提供数据，此方法执需要传递两个参数,分别提供数据的key与提供数据value</p>
-<figure class="highlight typescript"><table><tr><td class="code"><pre><span class="line">&lt;script setup lang=<span class="string">&quot;ts&quot;</span>&gt;</span><br><span class="line"><span class="keyword">import</span> &#123;provide&#125; <span class="keyword">from</span> <span class="string">&#x27;vue&#x27;</span></span><br><span class="line"><span class="title function_">provide</span>(<span class="string">&#x27;token&#x27;</span>,<span class="string">&#x27;admin_token&#x27;</span>);</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
-<p>后代组件可以通过inject方法获取数据,通过key获取存储的数值</p>
-<figure class="highlight typescript"><table><tr><td class="code"><pre><span class="line">&lt;script setup lang=<span class="string">&quot;ts&quot;</span>&gt;</span><br><span class="line"><span class="keyword">import</span> &#123;inject&#125; <span class="keyword">from</span> <span class="string">&#x27;vue&#x27;</span></span><br><span class="line"><span class="keyword">let</span> token = <span class="title function_">inject</span>(<span class="string">&#x27;token&#x27;</span>);</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
-<h2 id="pinia"><a href="#pinia" class="headerlink" title="pinia"></a>pinia</h2><hr>
-<p><strong>pinia官网:<a href="https://pinia.web3doc.top/">https://pinia.web3doc.top/</a></strong></p>
-<p>pinia也是集中式管理状态容器,类似于vuex。但是核心概念没有mutation、modules,使用方式参照官网</p>
-<h2 id="slot"><a href="#slot" class="headerlink" title="slot"></a>slot</h2><hr>
-<p>插槽：默认插槽、具名插槽、作用域插槽可以实现父子组件通信.</p>
-<p><strong>默认插槽:</strong></p>
-<p>在子组件内部的模板中书写slot全局组件标签</p>
-<figure class="highlight typescript"><table><tr><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">  <span class="language-xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;<span class="name">slot</span>&gt;</span><span class="tag">&lt;/<span class="name">slot</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line">&lt;/template&gt;</span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">script</span> <span class="attr">setup</span> <span class="attr">lang</span>=<span class="string">&quot;ts&quot;</span>&gt;</span></span></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">style</span> <span class="attr">scoped</span>&gt;</span></span></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
-<p>在父组件内部提供结构：Todo即为子组件,在父组件内部使用的时候，在双标签内部书写结构传递给子组件</p>
-<p>注意开发项目的时候默认插槽一般只有一个</p>
-<figure class="highlight typescript"><table><tr><td class="code"><pre><span class="line">&lt;<span class="title class_">Todo</span>&gt;</span><br><span class="line">  <span class="language-xml"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>我是默认插槽填充的结构<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span></span><br><span class="line">&lt;/<span class="title class_">Todo</span>&gt;</span><br></pre></td></tr></table></figure>
-<p><strong>具名插槽：</strong></p>
-<p>顾名思义，此插槽带有名字在组件内部留多个指定名字的插槽。</p>
-<p>下面是一个子组件内部,模板中留两个插槽</p>
-<figure class="highlight typescript"><table><tr><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">  <span class="language-xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;<span class="name">h1</span>&gt;</span>todo<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;<span class="name">slot</span> <span class="attr">name</span>=<span class="string">&quot;a&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">slot</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;<span class="name">slot</span> <span class="attr">name</span>=<span class="string">&quot;b&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">slot</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line">&lt;/template&gt;</span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">script</span> <span class="attr">setup</span> <span class="attr">lang</span>=<span class="string">&quot;ts&quot;</span>&gt;</span></span></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">style</span> <span class="attr">scoped</span>&gt;</span></span></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
-<p>父组件内部向指定的具名插槽传递结构。需要注意v-slot：可以替换为#</p>
-<figure class="highlight typescript"><table><tr><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">  <span class="language-xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;<span class="name">h1</span>&gt;</span>slot<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;<span class="name">Todo</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">      <span class="tag">&lt;<span class="name">template</span> <span class="attr">v-slot:a</span>&gt;</span>  //可以用#a替换</span></span><br><span class="line"><span class="language-xml">        <span class="tag">&lt;<span class="name">div</span>&gt;</span>填入组件A部分的结构<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">      <span class="tag">&lt;/<span class="name">template</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">      <span class="tag">&lt;<span class="name">template</span> <span class="attr">v-slot:b</span>&gt;</span>//可以用#b替换</span></span><br><span class="line"><span class="language-xml">        <span class="tag">&lt;<span class="name">div</span>&gt;</span>填入组件B部分的结构<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">      <span class="tag">&lt;/<span class="name">template</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;/<span class="name">Todo</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line">&lt;/template&gt;</span><br><span class="line"></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">script</span> <span class="attr">setup</span> <span class="attr">lang</span>=<span class="string">&quot;ts&quot;</span>&gt;</span><span class="language-javascript"></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"><span class="keyword">import</span> <span class="title class_">Todo</span> <span class="keyword">from</span> <span class="string">&quot;./Todo.vue&quot;</span>;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">style</span> <span class="attr">scoped</span>&gt;</span></span></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
-<p><strong>作用域插槽</strong></p>
-<p>作用域插槽：可以理解为，子组件数据由父组件提供，但是子组件内部决定不了自身结构与外观(样式)</p>
-<p>子组件Todo代码如下:</p>
-<figure class="highlight typescript"><table><tr><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">  <span class="language-xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;<span class="name">h1</span>&gt;</span>todo<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;<span class="name">ul</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">     <span class="comment">&lt;!--组件内部遍历数组--&gt;</span></span></span><br><span class="line"><span class="language-xml">      <span class="tag">&lt;<span class="name">li</span> <span class="attr">v-for</span>=<span class="string">&quot;(item,index) in todos&quot;</span> <span class="attr">:key</span>=<span class="string">&quot;item.id&quot;</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">         <span class="comment">&lt;!--作用域插槽将数据回传给父组件--&gt;</span></span></span><br><span class="line"><span class="language-xml">         <span class="tag">&lt;<span class="name">slot</span> <span class="attr">:</span>$<span class="attr">row</span>=<span class="string">&quot;item&quot;</span> <span class="attr">:</span>$<span class="attr">index</span>=<span class="string">&quot;index&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">slot</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">      <span class="tag">&lt;/<span class="name">li</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line">&lt;/template&gt;</span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">script</span> <span class="attr">setup</span> <span class="attr">lang</span>=<span class="string">&quot;ts&quot;</span>&gt;</span><span class="language-javascript"></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"><span class="title function_">defineProps</span>([<span class="string">&#x27;todos&#x27;</span>]);<span class="comment">//接受父组件传递过来的数据</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">style</span> <span class="attr">scoped</span>&gt;</span></span></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
-<p>父组件内部代码如下:</p>
-<figure class="highlight typescript"><table><tr><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">  <span class="language-xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;<span class="name">h1</span>&gt;</span>slot<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;<span class="name">Todo</span> <span class="attr">:todos</span>=<span class="string">&quot;todos&quot;</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">      <span class="tag">&lt;<span class="name">template</span> <span class="attr">v-slot</span>=<span class="string">&quot;&#123;$row,$index&#125;&quot;</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">         <span class="comment">&lt;!--父组件决定子组件的结构与外观--&gt;</span></span></span><br><span class="line"><span class="language-xml">         <span class="tag">&lt;<span class="name">span</span> <span class="attr">:style</span>=<span class="string">&quot;&#123;color:$row.done?&#x27;green&#x27;:&#x27;red&#x27;&#125;&quot;</span>&gt;</span>&#123;&#123;$row.title&#125;&#125;<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">      <span class="tag">&lt;/<span class="name">template</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;/<span class="name">Todo</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line">&lt;/template&gt;</span><br><span class="line"></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">script</span> <span class="attr">setup</span> <span class="attr">lang</span>=<span class="string">&quot;ts&quot;</span>&gt;</span><span class="language-javascript"></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"><span class="keyword">import</span> <span class="title class_">Todo</span> <span class="keyword">from</span> <span class="string">&quot;./Todo.vue&quot;</span>;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"><span class="keyword">import</span> &#123; ref &#125; <span class="keyword">from</span> <span class="string">&quot;vue&quot;</span>;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"><span class="comment">//父组件内部数据</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"><span class="keyword">let</span> todos = <span class="title function_">ref</span>([</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">  &#123; <span class="attr">id</span>: <span class="number">1</span>, <span class="attr">title</span>: <span class="string">&quot;吃饭&quot;</span>, <span class="attr">done</span>: <span class="literal">true</span> &#125;,</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">  &#123; <span class="attr">id</span>: <span class="number">2</span>, <span class="attr">title</span>: <span class="string">&quot;睡觉&quot;</span>, <span class="attr">done</span>: <span class="literal">false</span> &#125;,</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">  &#123; <span class="attr">id</span>: <span class="number">3</span>, <span class="attr">title</span>: <span class="string">&quot;打豆豆&quot;</span>, <span class="attr">done</span>: <span class="literal">true</span> &#125;,</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">]);</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">style</span> <span class="attr">scoped</span>&gt;</span></span></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
-]]></content>
-      <tags>
-        <tag>前端项目</tag>
       </tags>
   </entry>
   <entry>
