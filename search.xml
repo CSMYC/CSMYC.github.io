@@ -1,205 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>博客写作的必会技能--markdown</title>
-    <url>/2024/04/18/Typora%E6%95%99%E7%A8%8B/</url>
-    <content><![CDATA[<h1 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h1><hr>
-<p>作为一个博客小白，我认为在正式开始创作的时候，系统的学习一下<code>markdown</code>软件之一的<code>Typora</code>是必要的。</p>
-<p>以下是我结合相关资料整理出的一部分教程。</p>
-<p>首先在开始之前，为了避免大脑突然宕机点了关闭按钮而忘记保存已经写好的文档，我强烈建议先打开自动保存功能！！！</p>
-<h1 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h1><hr>
-<blockquote>
-<p> 语法： #(一级标题) ##(二级标题) ###(三级标题)….</p>
-<p>代码：</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="section">#  这是一个一级标题</span></span><br><span class="line"><span class="section">## 这是一个二级标题</span></span><br></pre></td></tr></table></figure>
-<p>快捷键：</p>
-<ul>
-<li>Ctrl+数字1~6 可以快速将选中的文本调成对应级别的标题</li>
-<li>Ctrl+0 可以快速将选中的文本调成普通文本</li>
-<li>Ctrl+加号/减号 可以对标题级别进行加减</li>
-</ul>
-</blockquote>
-<h1 id="段落"><a href="#段落" class="headerlink" title="段落"></a>段落</h1><hr>
-<h2 id="换行"><a href="#换行" class="headerlink" title="换行"></a>换行</h2><blockquote>
-<p>代码：</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">这是一个段落</span><br><span class="line">这是一个段落</span><br></pre></td></tr></table></figure>
-<p>效果：</p>
-<p>这是第一行</p>
-<p>这是第二行</p>
-<p>这是一个段落<br>这是一个段落</p>
-<p>说明：</p>
-<p>回车换行的距离大一些，具体可参考效果中的演示</p>
-<p>想要段落的距离小一些，可以使用 shift+回车 组合键</p>
-</blockquote>
-<h2 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h2><blockquote>
-<p>语法： —-或者<em>*</em>  +回车</p>
-<p>代码：</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">---或者***</span><br></pre></td></tr></table></figure>
-<p>效果</p>
-<hr>
-</blockquote>
-<h1 id="文字显示"><a href="#文字显示" class="headerlink" title="文字显示"></a>文字显示</h1><hr>
-<h2 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h2><blockquote>
-<p>语法：</p>
-<ul>
-<li>粗体：用一对双星号包裹</li>
-<li>删除线：用一堆双飘号包裹 </li>
-<li>下划线： 用一对u标签包裹</li>
-<li>斜体：用一对单星号包裹</li>
-<li>高亮：用一对双等号包裹</li>
-</ul>
-<p>代码：</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="strong">**这是粗体**</span></span><br><span class="line">~~这是删除线~~</span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">u</span>&gt;</span></span>这是下划线<span class="language-xml"><span class="tag">&lt;/<span class="name">u</span>&gt;</span></span></span><br><span class="line"><span class="emphasis">*这是斜体*</span></span><br><span class="line">==这是高亮==</span><br></pre></td></tr></table></figure>
-<p>效果：</p>
-<p><strong>这是粗体</strong><br><del>这是删除线</del><br><u>这是下划线</u><br><em>这是斜体</em><br>==这是高亮==</p>
-<p>说明：</p>
-<p>高亮需要在偏好设置中开启，但是似乎在网页中并没有显示<br>如果需要输入“ * ”需要在其前面输入 / 来完成转义</p>
-<p>快捷键：</p>
-<ul>
-<li>加粗 ： Ctrl+B</li>
-<li>删除线：Shift+Alt+5</li>
-<li>下划线： Ctrl+U</li>
-<li>斜体： Ctrl+L</li>
-</ul>
-</blockquote>
-<h2 id="上下标"><a href="#上下标" class="headerlink" title="上下标"></a>上下标</h2><blockquote>
-<p>代码：</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">x^3^</span><br><span class="line">H~2~O</span><br></pre></td></tr></table></figure>
-<p>效果：</p>
-<p>x^3^<br>H~2~O</p>
-</blockquote>
-<h1 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h1><hr>
-<h2 id="无序列表"><a href="#无序列表" class="headerlink" title="无序列表"></a>无序列表</h2><blockquote>
-<p>代码：</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="emphasis">*/-/+ +空格</span></span><br></pre></td></tr></table></figure>
-<p>效果：</p>
-<p>1.只有同一级别：</p>
-<ul>
-<li>联想</li>
-<li>戴尔</li>
-<li>惠普</li>
-<li>华硕 </li>
-</ul>
-<p>2.子集类：</p>
-<ul>
-<li>华硕<ul>
-<li>天选</li>
-<li>ROG</li>
-</ul>
-</li>
-<li>戴尔<ul>
-<li>游侠</li>
-<li>外星人</li>
-</ul>
-</li>
-</ul>
-<p>快捷键 ： Ctrl+Shift+]</p>
-<p>说明：</p>
-<p>可以连续按两次回车退出当前层级列表<br>也可以按Tab键进行下一个层级的编辑</p>
-</blockquote>
-<h2 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h2><blockquote>
-<p>代码：</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">数字+.+空格</span><br></pre></td></tr></table></figure>
-<p>效果：</p>
-<ol>
-<li><p>第一个标题</p>
-</li>
-<li><p>第二个标题</p>
-</li>
-<li><p>第三个标题</p>
-<p>子内容1</p>
-<p>子内容2</p>
-</li>
-<li><p>第四个标题</p>
-</li>
-</ol>
-<p>快捷键： Ctrl+Shift+[</p>
-</blockquote>
-<h2 id="任务列表"><a href="#任务列表" class="headerlink" title="任务列表"></a>任务列表</h2><blockquote>
-<p>代码：</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="bullet">-</span> [] 玩游戏</span><br><span class="line"><span class="bullet">-</span> [] 上修罗</span><br></pre></td></tr></table></figure>
-<p>效果：</p>
-<ul>
-<li>[x] 玩游戏</li>
-<li>[ ] 上修罗 </li>
-</ul>
-</blockquote>
-<h1 id="区块显示"><a href="#区块显示" class="headerlink" title="区块显示"></a>区块显示</h1><blockquote>
-<p>代码：</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&gt;&gt;+空格</span><br></pre></td></tr></table></figure>
-<p>效果：</p>
-<blockquote>
-<p>这是最外层区块</p>
-<blockquote>
-<p>这是内层区块</p>
-</blockquote>
-</blockquote>
-</blockquote>
-<h1 id="代码显示"><a href="#代码显示" class="headerlink" title="代码显示"></a>代码显示</h1><h2 id="行内代码"><a href="#行内代码" class="headerlink" title="行内代码"></a>行内代码</h2><blockquote>
-<p>代码：</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="code">`int a = 10`</span></span><br></pre></td></tr></table></figure>
-<p>效果：<br><code>int a = 10</code></p>
-<p>快捷键：Ctrl+Shift+`</p>
-</blockquote>
-<h2 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h2><blockquote>
-<p>效果：</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">这是一个代码块</span><br></pre></td></tr></table></figure>
-<p>快捷键：Ctrl+Shift+K</p>
-</blockquote>
-<h1 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h1><blockquote>
-<p>代码：</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">https://csmyc.github.io</span><br><span class="line">[<span class="string">我的博客</span>](<span class="link">https://csmyc.github.io</span>)</span><br></pre></td></tr></table></figure>
-<p>效果：<br><a href="https://csmyc.github.io">https://csmyc.github.io</a><br><a href="https://csmyc.github.io">我的博客</a></p>
-<p>快捷键：Ctrl+K</p>
-</blockquote>
-<h1 id="脚注"><a href="#脚注" class="headerlink" title="脚注"></a>脚注</h1><blockquote>
-<p>说明：对文本进行解释说明</p>
-<p>代码：</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">[^文本]</span><br><span class="line">[^文本]：解释说明</span><br></pre></td></tr></table></figure>
-<p>效果：<br>idea<sup><a href="#fn_1" id="reffn_1">1</a></sup>是一个非常好用的IDE</p>
-<p><sup><a href="#fn_1" id="reffn_1">1</a></sup>:IDEA 全称 IntelliJ IDEA，是<a href="https://baike.baidu.com/item/java/85979?fromModule=lemma_inlink">java</a><a href="https://baike.baidu.com/item/编程语言/9845131?fromModule=lemma_inlink">编程语言</a>的<a href="https://baike.baidu.com/item/集成开发环境/298524?fromModule=lemma_inlink">集成开发环境</a>。</p>
-</blockquote>
-<h1 id="图片插入"><a href="#图片插入" class="headerlink" title="图片插入"></a>图片插入</h1><blockquote>
-<p>代码：</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">![<span class="string">不显示的文字</span>](<span class="link">图片路径 &quot;图片标题&quot;</span>)</span><br></pre></td></tr></table></figure>
-<p>效果：</p>
-<p><img src="/images/top.png" alt="我的主页图片"></p>
-</blockquote>
-<h1 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h1><blockquote>
-<p>代码：</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">| 1 | 2 | 3 |</span><br></pre></td></tr></table></figure>
-<p>效果：</p>
-<div class="table-container">
-<table>
-<thead>
-<tr>
-<th>1</th>
-<th>2</th>
-<th>3</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>快捷键 ： Ctrl+T</p>
-</blockquote>
-<h1 id="流程图"><a href="#流程图" class="headerlink" title="流程图"></a>流程图</h1><blockquote>
-<p>代码 ：</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="code">```mermaid</span></span><br><span class="line"><span class="code">graph LR</span></span><br><span class="line"><span class="code">A[方形]==&gt;B(圆角)</span></span><br><span class="line"><span class="code">B==&gt;C&#123;条件a&#125;</span></span><br><span class="line"><span class="code">B--&gt;|a=1|D[结果1]</span></span><br><span class="line"><span class="code">C--&gt;|a=2|E[结果2]</span></span><br><span class="line"><span class="code">F[横向流程图]</span></span><br><span class="line"><span class="code">```</span></span><br></pre></td></tr></table></figure>
-<p>说明：</p>
-<p>hexo 默认不支持流程图，所以我就不在这里展示流程图的效果了，主要还是懒</p>
-</blockquote>
-<h3 id=""><a href="#" class="headerlink" title=" "></a> </h3>]]></content>
-      <tags>
-        <tag>markdown</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>MySQL</title>
     <url>/2024/05/11/MySQL/</url>
     <content><![CDATA[<h1 id="MySQL基础"><a href="#MySQL基础" class="headerlink" title="MySQL基础"></a><strong><em>MySQL基础</em></strong></h1><p>连接: cmd  输入  mysql -u root -p   在输入密码123456</p>
@@ -3054,6 +2855,205 @@
 <h2 id="读写分离"><a href="#读写分离" class="headerlink" title="读写分离"></a>读写分离</h2>]]></content>
       <tags>
         <tag>MySQL</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>博客写作的必会技能--markdown</title>
+    <url>/2024/04/18/Typora%E6%95%99%E7%A8%8B/</url>
+    <content><![CDATA[<h1 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h1><hr>
+<p>作为一个博客小白，我认为在正式开始创作的时候，系统的学习一下<code>markdown</code>软件之一的<code>Typora</code>是必要的。</p>
+<p>以下是我结合相关资料整理出的一部分教程。</p>
+<p>首先在开始之前，为了避免大脑突然宕机点了关闭按钮而忘记保存已经写好的文档，我强烈建议先打开自动保存功能！！！</p>
+<h1 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h1><hr>
+<blockquote>
+<p> 语法： #(一级标题) ##(二级标题) ###(三级标题)….</p>
+<p>代码：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="section">#  这是一个一级标题</span></span><br><span class="line"><span class="section">## 这是一个二级标题</span></span><br></pre></td></tr></table></figure>
+<p>快捷键：</p>
+<ul>
+<li>Ctrl+数字1~6 可以快速将选中的文本调成对应级别的标题</li>
+<li>Ctrl+0 可以快速将选中的文本调成普通文本</li>
+<li>Ctrl+加号/减号 可以对标题级别进行加减</li>
+</ul>
+</blockquote>
+<h1 id="段落"><a href="#段落" class="headerlink" title="段落"></a>段落</h1><hr>
+<h2 id="换行"><a href="#换行" class="headerlink" title="换行"></a>换行</h2><blockquote>
+<p>代码：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">这是一个段落</span><br><span class="line">这是一个段落</span><br></pre></td></tr></table></figure>
+<p>效果：</p>
+<p>这是第一行</p>
+<p>这是第二行</p>
+<p>这是一个段落<br>这是一个段落</p>
+<p>说明：</p>
+<p>回车换行的距离大一些，具体可参考效果中的演示</p>
+<p>想要段落的距离小一些，可以使用 shift+回车 组合键</p>
+</blockquote>
+<h2 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h2><blockquote>
+<p>语法： —-或者<em>*</em>  +回车</p>
+<p>代码：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">---或者***</span><br></pre></td></tr></table></figure>
+<p>效果</p>
+<hr>
+</blockquote>
+<h1 id="文字显示"><a href="#文字显示" class="headerlink" title="文字显示"></a>文字显示</h1><hr>
+<h2 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h2><blockquote>
+<p>语法：</p>
+<ul>
+<li>粗体：用一对双星号包裹</li>
+<li>删除线：用一堆双飘号包裹 </li>
+<li>下划线： 用一对u标签包裹</li>
+<li>斜体：用一对单星号包裹</li>
+<li>高亮：用一对双等号包裹</li>
+</ul>
+<p>代码：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="strong">**这是粗体**</span></span><br><span class="line">~~这是删除线~~</span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">u</span>&gt;</span></span>这是下划线<span class="language-xml"><span class="tag">&lt;/<span class="name">u</span>&gt;</span></span></span><br><span class="line"><span class="emphasis">*这是斜体*</span></span><br><span class="line">==这是高亮==</span><br></pre></td></tr></table></figure>
+<p>效果：</p>
+<p><strong>这是粗体</strong><br><del>这是删除线</del><br><u>这是下划线</u><br><em>这是斜体</em><br>==这是高亮==</p>
+<p>说明：</p>
+<p>高亮需要在偏好设置中开启，但是似乎在网页中并没有显示<br>如果需要输入“ * ”需要在其前面输入 / 来完成转义</p>
+<p>快捷键：</p>
+<ul>
+<li>加粗 ： Ctrl+B</li>
+<li>删除线：Shift+Alt+5</li>
+<li>下划线： Ctrl+U</li>
+<li>斜体： Ctrl+L</li>
+</ul>
+</blockquote>
+<h2 id="上下标"><a href="#上下标" class="headerlink" title="上下标"></a>上下标</h2><blockquote>
+<p>代码：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">x^3^</span><br><span class="line">H~2~O</span><br></pre></td></tr></table></figure>
+<p>效果：</p>
+<p>x^3^<br>H~2~O</p>
+</blockquote>
+<h1 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h1><hr>
+<h2 id="无序列表"><a href="#无序列表" class="headerlink" title="无序列表"></a>无序列表</h2><blockquote>
+<p>代码：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="emphasis">*/-/+ +空格</span></span><br></pre></td></tr></table></figure>
+<p>效果：</p>
+<p>1.只有同一级别：</p>
+<ul>
+<li>联想</li>
+<li>戴尔</li>
+<li>惠普</li>
+<li>华硕 </li>
+</ul>
+<p>2.子集类：</p>
+<ul>
+<li>华硕<ul>
+<li>天选</li>
+<li>ROG</li>
+</ul>
+</li>
+<li>戴尔<ul>
+<li>游侠</li>
+<li>外星人</li>
+</ul>
+</li>
+</ul>
+<p>快捷键 ： Ctrl+Shift+]</p>
+<p>说明：</p>
+<p>可以连续按两次回车退出当前层级列表<br>也可以按Tab键进行下一个层级的编辑</p>
+</blockquote>
+<h2 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h2><blockquote>
+<p>代码：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">数字+.+空格</span><br></pre></td></tr></table></figure>
+<p>效果：</p>
+<ol>
+<li><p>第一个标题</p>
+</li>
+<li><p>第二个标题</p>
+</li>
+<li><p>第三个标题</p>
+<p>子内容1</p>
+<p>子内容2</p>
+</li>
+<li><p>第四个标题</p>
+</li>
+</ol>
+<p>快捷键： Ctrl+Shift+[</p>
+</blockquote>
+<h2 id="任务列表"><a href="#任务列表" class="headerlink" title="任务列表"></a>任务列表</h2><blockquote>
+<p>代码：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="bullet">-</span> [] 玩游戏</span><br><span class="line"><span class="bullet">-</span> [] 上修罗</span><br></pre></td></tr></table></figure>
+<p>效果：</p>
+<ul>
+<li>[x] 玩游戏</li>
+<li>[ ] 上修罗 </li>
+</ul>
+</blockquote>
+<h1 id="区块显示"><a href="#区块显示" class="headerlink" title="区块显示"></a>区块显示</h1><blockquote>
+<p>代码：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&gt;&gt;+空格</span><br></pre></td></tr></table></figure>
+<p>效果：</p>
+<blockquote>
+<p>这是最外层区块</p>
+<blockquote>
+<p>这是内层区块</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<h1 id="代码显示"><a href="#代码显示" class="headerlink" title="代码显示"></a>代码显示</h1><h2 id="行内代码"><a href="#行内代码" class="headerlink" title="行内代码"></a>行内代码</h2><blockquote>
+<p>代码：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="code">`int a = 10`</span></span><br></pre></td></tr></table></figure>
+<p>效果：<br><code>int a = 10</code></p>
+<p>快捷键：Ctrl+Shift+`</p>
+</blockquote>
+<h2 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h2><blockquote>
+<p>效果：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">这是一个代码块</span><br></pre></td></tr></table></figure>
+<p>快捷键：Ctrl+Shift+K</p>
+</blockquote>
+<h1 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h1><blockquote>
+<p>代码：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">https://csmyc.github.io</span><br><span class="line">[<span class="string">我的博客</span>](<span class="link">https://csmyc.github.io</span>)</span><br></pre></td></tr></table></figure>
+<p>效果：<br><a href="https://csmyc.github.io">https://csmyc.github.io</a><br><a href="https://csmyc.github.io">我的博客</a></p>
+<p>快捷键：Ctrl+K</p>
+</blockquote>
+<h1 id="脚注"><a href="#脚注" class="headerlink" title="脚注"></a>脚注</h1><blockquote>
+<p>说明：对文本进行解释说明</p>
+<p>代码：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">[^文本]</span><br><span class="line">[^文本]：解释说明</span><br></pre></td></tr></table></figure>
+<p>效果：<br>idea<sup><a href="#fn_1" id="reffn_1">1</a></sup>是一个非常好用的IDE</p>
+<p><sup><a href="#fn_1" id="reffn_1">1</a></sup>:IDEA 全称 IntelliJ IDEA，是<a href="https://baike.baidu.com/item/java/85979?fromModule=lemma_inlink">java</a><a href="https://baike.baidu.com/item/编程语言/9845131?fromModule=lemma_inlink">编程语言</a>的<a href="https://baike.baidu.com/item/集成开发环境/298524?fromModule=lemma_inlink">集成开发环境</a>。</p>
+</blockquote>
+<h1 id="图片插入"><a href="#图片插入" class="headerlink" title="图片插入"></a>图片插入</h1><blockquote>
+<p>代码：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">![<span class="string">不显示的文字</span>](<span class="link">图片路径 &quot;图片标题&quot;</span>)</span><br></pre></td></tr></table></figure>
+<p>效果：</p>
+<p><img src="/images/top.png" alt="我的主页图片"></p>
+</blockquote>
+<h1 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h1><blockquote>
+<p>代码：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">| 1 | 2 | 3 |</span><br></pre></td></tr></table></figure>
+<p>效果：</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>快捷键 ： Ctrl+T</p>
+</blockquote>
+<h1 id="流程图"><a href="#流程图" class="headerlink" title="流程图"></a>流程图</h1><blockquote>
+<p>代码 ：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="code">```mermaid</span></span><br><span class="line"><span class="code">graph LR</span></span><br><span class="line"><span class="code">A[方形]==&gt;B(圆角)</span></span><br><span class="line"><span class="code">B==&gt;C&#123;条件a&#125;</span></span><br><span class="line"><span class="code">B--&gt;|a=1|D[结果1]</span></span><br><span class="line"><span class="code">C--&gt;|a=2|E[结果2]</span></span><br><span class="line"><span class="code">F[横向流程图]</span></span><br><span class="line"><span class="code">```</span></span><br></pre></td></tr></table></figure>
+<p>说明：</p>
+<p>hexo 默认不支持流程图，所以我就不在这里展示流程图的效果了，主要还是懒</p>
+</blockquote>
+<h3 id=""><a href="#" class="headerlink" title=" "></a> </h3>]]></content>
+      <tags>
+        <tag>markdown</tag>
       </tags>
   </entry>
   <entry>
