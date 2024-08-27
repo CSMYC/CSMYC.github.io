@@ -10,6 +10,6 @@ http://example.com/movies/index.html
 http://example.com/categories/index.html
 http://example.com/tags/index.html
 http://example.com/
-http://example.com/tags/markdown/
 http://example.com/tags/MySQL/
+http://example.com/tags/markdown/
 http://example.com/tags/Java%E5%90%8E%E7%AB%AF/
